@@ -60,6 +60,7 @@ class CardGame extends Component {
         { suit: "♣︎", num: "J", numVal: 10 },
         { suit: "♣︎", num: "A", numVal: 10 },
       ],
+      shuffledDeck: [],
       player1hand: [],
       player2hand: [],
     };
@@ -70,19 +71,33 @@ class CardGame extends Component {
       var location1 = Math.floor(Math.random() * cardDeck.length);
       var location2 = Math.floor(Math.random() * cardDeck.length);
       var tmp = cardDeck[location1];
-
       cardDeck[location1] = cardDeck[location2];
       cardDeck[location2] = tmp;
     }
   };
 
+  dealHands = (shuffledDeck) => {
+    const { shuffleDeck } = this.state;
+
+    console.log(shuffledDeck);
+  };
+
   handleStart = (e) => {
     const { cardDeck } = this.state;
     this.shuffleDeck(cardDeck);
+
     this.setState({
-      player1hand: cardDeck,
+      shuffledDeck: cardDeck,
     });
   };
+
+  dealHands = (shuffledDeck) => {
+    console.log(shuffledDeck);
+  };
+
+  componentDidUpdate() {
+    console.log(this.state);
+  }
 
   render() {
     const { cardDeck, player1hand } = this.state;
