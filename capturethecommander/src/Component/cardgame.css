@@ -1,0 +1,14 @@
+.deck {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.card {
+  background: linear-gradient(pink, rgb(218, 107, 187));
+  align-items: center;
+  justify-self: center;
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+}
