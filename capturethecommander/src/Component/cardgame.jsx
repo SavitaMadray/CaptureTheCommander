@@ -60,20 +60,44 @@ class CardGame extends Component {
         { suit: "♣︎", num: "J", numVal: 10 },
         { suit: "♣︎", num: "A", numVal: 10 },
       ],
+      player1hand: [],
+      player2hand: [],
     };
   }
 
-  render() {
+  shuffleDeck = (cardDeck) => {
+    for (var i = 0; i < 1000; i++) {
+      var location1 = Math.floor(Math.random() * cardDeck.length);
+      var location2 = Math.floor(Math.random() * cardDeck.length);
+      var tmp = cardDeck[location1];
+
+      cardDeck[location1] = cardDeck[location2];
+      cardDeck[location2] = tmp;
+    }
+  };
+
+  handleStart = (e) => {
     const { cardDeck } = this.state;
+    this.shuffleDeck(cardDeck);
+    this.setState({
+      player1hand: cardDeck,
+    });
+  };
+
+  render() {
+    const { cardDeck, player1hand } = this.state;
     return (
-      <div className="deck">
-        {cardDeck.map((card) => {
-          return (
-            <p key={card.numVal} className="card">
-              {card.suit} {card.num}
-            </p>
-          );
-        })}
+      <div>
+        <button onClick={this.handleStart}>Start Game</button>
+        <div className="deck">
+          {player1hand.map((card) => {
+            return (
+              <p key={card.numVal} className="card">
+                {card.suit} {card.num}
+              </p>
+            );
+          })}
+        </div>
       </div>
     );
   }
