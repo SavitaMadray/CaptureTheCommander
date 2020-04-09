@@ -87,9 +87,9 @@ class CardGame extends Component {
   render() {
     const { cardDeck, player1hand } = this.state;
     return (
-      <div>
+      <div className="board">
         <button onClick={this.handleStart}>Start Game</button>
-        <div className="deck">
+        <div className="deck1">
           {player1hand.map((card) => {
             return (
               <p key={card.numVal} className="card">
@@ -98,6 +98,7 @@ class CardGame extends Component {
             );
           })}
         </div>
+        <div className="deck2"></div>
       </div>
     );
   }
