@@ -66,23 +66,44 @@ class CardGame extends Component {
   }
 
   shuffleDeck = (cardDeck) => {
-    for (var i = 0; i < 1000; i++) {
-      var location1 = Math.floor(Math.random() * cardDeck.length);
-      var location2 = Math.floor(Math.random() * cardDeck.length);
-      var tmp = cardDeck[location1];
-
+    for (let i = 0; i < 1000; i++) {
+      let location1 = Math.floor(Math.random() * cardDeck.length);
+      let location2 = Math.floor(Math.random() * cardDeck.length);
+      let tmp = cardDeck[location1];
       cardDeck[location1] = cardDeck[location2];
       cardDeck[location2] = tmp;
     }
+    this.setState({
+      cardDeck: cardDeck,
+    });
+  };
+
+  dealHands = () => {
+    const { cardDeck } = this.state;
+    let player1 = [];
+    let player2 = [];
+    for (let i = 0; i < 26; i++) {
+      if (i % 2 === 0) {
+        player1.push(cardDeck[i]);
+      } else {
+        player2.push(cardDeck[i]);
+      }
+    }
+    this.setState({
+      player1hand: player1,
+      player2hand: player2,
+    });
   };
 
   handleStart = (e) => {
     const { cardDeck } = this.state;
     this.shuffleDeck(cardDeck);
-    this.setState({
-      player1hand: cardDeck,
-    });
+    this.dealHands();
   };
+
+  componentDidUpdate() {
+    console.log(this.state);
+  }
 
   render() {
     const { cardDeck, player1hand } = this.state;
