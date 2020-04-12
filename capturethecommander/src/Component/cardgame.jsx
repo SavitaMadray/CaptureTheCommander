@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./cardgame.css";
+import Card from "./card"
 
 class CardGame extends Component {
   constructor() {
@@ -466,20 +467,41 @@ class CardGame extends Component {
   };
 
   flipped = (e) => {
-    const { player1hand, player2hand } = this.state;
+    let { player1hand, player2hand } = this.state;
+    console.log(e.target.id)
 
     if (e.target.className === "card1") {
-      player1hand[e.target.id].isFlipped = true;
+
+      if (player1hand[e.target.id].isFlipped === false) {
+        player1hand[e.target.id].isFlipped = true;
+        console.log("false", player1hand[e.target.id])
+      } else {
+        player1hand[e.target.id].isFlipped = false;
+        // console.log("true", player1hand[e.target.id])
+
+      }
+
       this.setState({
-        player1hand: player1hand,
-      });
-    } else {
-      player2hand[e.target.id].isFlipped = true;
-      this.setState({
-        player2hand: player2hand,
+        player1hand: player1hand
       });
     }
-  };
+
+    if (e.target.className === "card2") {
+
+      if (player2hand[e.target.id].isFlipped === false) {
+        player2hand[e.target.id].isFlipped = true;
+        console.log("false", player2hand[e.target.id])
+      } else {
+        player2hand[e.target.id].isFlipped = false;
+        // console.log("true", player1hand[e.target.id])
+      }
+
+      this.setState({
+        player2hand: player2hand
+      });
+
+    }
+  }
 
   componentDidUpdate() {
     console.log(this.state);
@@ -491,42 +513,46 @@ class CardGame extends Component {
     return (
       <div className="board">
         <button onClick={this.handleStart}>Start Game</button>
+
         <div className="deck1">
           {player1hand.map((card, i) => {
-            if (card.isFlipped === true) {
-              return <img src={card.backImg} className="card1"></img>;
-            } else {
-              return (
-                <p
-                  id={i}
-                  key={card.suit + card.num}
-                  className="card1"
-                  onClick={this.flipped}
-                >
-                  {card.suit} {card.num}
-                </p>
-              );
-            }
-          })}
+            return (
+                <Card
+                  key={card.suit + card.num}  //key
+                  id={i}                      //id
+                  flipped={card.isFlipped}    //checking to see if card is flipped or not
+                  clicked={this.flipped}      //passing function through props to change
+                  cardbackImg={card.backImg}  //set image of card through props
+                  cardSuit={card.suit}        //set card suit through props
+                  cardNum={card.num}          //set card number through props
+                  classname="card1"           //set class name through props
+                />
+            )
+          })
+        }
         </div>
+        <p>---------------------------------------------------------------------</p>
         <div className="deck2">
           {player2hand.map((card, i) => {
-            if (card.isFlipped === true) {
-              return <img src={card.backImg} className="card2"></img>;
-            } else {
-              return (
-                <p
-                  id={i}
-                  key={card.suit + card.num}
-                  className="card2"
-                  onClick={this.flipped}
-                >
-                  {card.suit} {card.num}
-                </p>
-              );
-            }
-          })}
+            return (
+                <Card
+                  key={card.suit + card.num}  //key
+                  id={i}                      //id
+                  flipped={card.isFlipped}    //checking to see if card is flipped or not
+                  clicked={this.flipped}      //passing function through props to change
+                  cardbackImg={card.backImg}  //set image of card through props
+                  cardSuit={card.suit}        //set card suit through props
+                  cardNum={card.num}          //set card number through props
+                  classname="card2"           //set class name through props
+                />
+            )
+          })
+          }
         </div>
+
+
+
+
       </div>
     );
   }
