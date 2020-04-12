@@ -8,11 +8,30 @@
   grid-gap: 2px;
 }
 
-.card {
-  background: linear-gradient(pink, rgb(218, 107, 187));
+.card1 {
+  background: linear-gradient(black, gray);
   align-items: center;
   justify-self: center;
   width: 100px;
   height: 150px;
-  border: 1px solid black;
+  border: 2px solid grey;
+  border-radius: 5px;
+  color: white;
+}
+
+.card2 {
+  background: linear-gradient(black, gray);
+  align-items: center;
+  justify-self: center;
+  width: 100px;
+  height: 150px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  color: white;
+}
+
+.deck2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
