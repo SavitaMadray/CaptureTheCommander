@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./cardgame.css";
+import Card from "./card";
+import Gameboard from "./gameboard";
 
 class CardGame extends Component {
   constructor() {
@@ -486,12 +488,20 @@ class CardGame extends Component {
   }
 
   render() {
-    const { cardDeck, player1hand, player2hand, isFlipped } = this.state;
+    const {
+      cardDeck,
+      rowOne,
+      player1hand,
+      player2hand,
+      isFlipped,
+    } = this.state;
 
     return (
       <div className="board">
         <button onClick={this.handleStart}>Start Game</button>
-        <div className="deck1">
+        <Gameboard player1hand={player1hand} />
+
+        {/* <div className="deck1">
           {player1hand.map((card, i) => {
             if (card.isFlipped === true) {
               return <img src={card.backImg} className="card1"></img>;
@@ -526,7 +536,7 @@ class CardGame extends Component {
               );
             }
           })}
-        </div>
+        </div> */}
       </div>
     );
   }
