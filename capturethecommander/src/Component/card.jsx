@@ -21,6 +21,7 @@ function Card(props) {
             className = {props.classname}
             >
                 {props.cardSuit} {props.cardNum}
+                s
             </p>
         )
     }
