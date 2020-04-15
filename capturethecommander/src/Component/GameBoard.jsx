@@ -2,8 +2,8 @@ import React from "react";
 import "../Css/styles.css";
 import Card from "./card";
 
-export default function Board(props) {
-  const { player1hand, cardFlipped } = props;
+export default function GameBoard(props) {
+  const { player1hand, flipped } = props;
 
   let firstRow = player1hand.slice(0, 4); //0,1,2,3
   let secondRow = player1hand.slice(4, 7);
@@ -13,10 +13,7 @@ export default function Board(props) {
 
   let cardFormation = [firstRow, secondRow, thirdRow, fourthRow, fifthRow];
 
- function handleCardFlip(){
-    
-    cardFlipped()
-  }
+ 
 
   console.log(player1hand)
 
@@ -34,8 +31,8 @@ export default function Board(props) {
             return <Card
             key = {card.suit + card.num}
             id = {i}
-            flipped ={card.isFlipped}
-            clicked ={handleCardFlip}
+            isFlipped ={card.isFlipped}
+            clicked ={flipped}
             cardbackImg ={card.backImg}
             cardNum = {card.num}
             classname="card1"  

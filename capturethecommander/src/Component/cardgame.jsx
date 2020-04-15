@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./cardgame.css";
 import Card from "./card"
-import Board from "./GameBoard";
+import GameBoard from "./GameBoard";
 
 class CardGame extends Component {
   constructor() {
@@ -521,9 +521,9 @@ class CardGame extends Component {
 
       if (gameStart){
         return(
-          <Board
+          <GameBoard
           player1hand={player1hand}
-          cardFlipped={this.flipped}
+          flipped={this.flipped}
         />
         ) 
       }
