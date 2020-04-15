@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./cardgame.css";
 import Card from "./card"
+import Board from "./GameBoard";
 
 class CardGame extends Component {
   constructor() {
@@ -427,6 +428,7 @@ class CardGame extends Component {
       ],
       player1hand: [],
       player2hand: [],
+      gameStart: false
     };
   }
 
@@ -441,6 +443,17 @@ class CardGame extends Component {
     this.setState({
       cardDeck: cardDeck,
     });
+  };
+  
+  handleStart = (e) => {
+    const { cardDeck } = this.state;
+    this.shuffleDeck(cardDeck);
+    this.dealHands();
+    this.setState({
+      gameStart: true
+    })
+
+
   };
 
   dealHands = () => {
@@ -460,34 +473,30 @@ class CardGame extends Component {
     });
   };
 
-  handleStart = (e) => {
-    const { cardDeck } = this.state;
-    this.shuffleDeck(cardDeck);
-    this.dealHands();
-  };
-
+  
+  
   flipped = (e) => {
     let { player1hand, player2hand } = this.state;
     console.log(e.target.id)
-
+    
     if (e.target.className === "card1") {
-
+      
       if (player1hand[e.target.id].isFlipped === false) {
         player1hand[e.target.id].isFlipped = true;
         console.log("false", player1hand[e.target.id])
       } else {
         player1hand[e.target.id].isFlipped = false;
         // console.log("true", player1hand[e.target.id])
-
+        
       }
-
+      
       this.setState({
         player1hand: player1hand
       });
     }
-
+    
     if (e.target.className === "card2") {
-
+      
       if (player2hand[e.target.id].isFlipped === false) {
         player2hand[e.target.id].isFlipped = true;
         console.log("false", player2hand[e.target.id])
@@ -495,26 +504,46 @@ class CardGame extends Component {
         player2hand[e.target.id].isFlipped = false;
         // console.log("true", player1hand[e.target.id])
       }
-
+      
       this.setState({
         player2hand: player2hand
       });
-
+      
     }
   }
-
+  
   componentDidUpdate() {
     console.log(this.state);
   }
+  
+  Game = () =>{
+    const {gameStart, player1hand} = this.state;
+
+      if (gameStart){
+        return(
+          <Board
+          player1hand={player1hand}
+          cardFlipped={this.flipped}
+        />
+        ) 
+      }
+
+  }
+
+
 
   render() {
-    const { cardDeck, player1hand, player2hand, isFlipped } = this.state;
-
+    const { cardDeck, player1hand, player2hand, isFlipped, gameStart } = this.state;
+    // console.log("game started", gameStart)
+    
     return (
       <div className="board">
-        <button onClick={this.handleStart}>Start Game</button>
+      <button onClick={this.handleStart}>Start Game</button>
 
-        <div className="deck1">
+      {this.Game()}
+
+
+        {/* <div className="deck1">
           {player1hand.map((card, i) => {
             return (
                 <Card
@@ -548,7 +577,7 @@ class CardGame extends Component {
             )
           })
           }
-        </div>
+        </div> */}
 
 
 
