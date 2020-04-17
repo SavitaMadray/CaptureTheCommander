@@ -1,9 +1,9 @@
 import React from "react"
 
 function Card(props) {
-    let flipped = props.flipped
+    let isFlipped = props.isFlipped
 
-    if (flipped === false) {
+    if (isFlipped === false) {
         return (
             <img
                 id = {props.id}
@@ -21,7 +21,6 @@ function Card(props) {
             className = {props.classname}
             >
                 {props.cardSuit} {props.cardNum}
-                s
             </p>
         )
     }
