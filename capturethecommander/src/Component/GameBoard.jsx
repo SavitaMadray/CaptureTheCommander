@@ -1,5 +1,5 @@
 import React from "react";
-import "../Css/styles.css";
+import "./CSS/gameboard.css";
 import Card from "./card";
 
 export default function GameBoard(props) {
@@ -17,7 +17,7 @@ export default function GameBoard(props) {
   // rule about what cards can be flipped?
 
   return (
-    <div className="Board">
+    <div className="board">
       <section className="row1">
         {firstRow.map((card, i) => {
           return (

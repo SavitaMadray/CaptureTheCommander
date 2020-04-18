@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./cardgame.css";
-import Card from "./card"
+import "./CSS/cardgame.css";
+import Card from "./card";
 import GameBoard from "./GameBoard";
 
 class CardGame extends Component {
@@ -428,7 +428,7 @@ class CardGame extends Component {
       ],
       player1hand: [],
       player2hand: [],
-      gameStart: false
+      gameStart: false,
     };
   }
 
@@ -444,16 +444,14 @@ class CardGame extends Component {
       cardDeck: cardDeck,
     });
   };
-  
+
   handleStart = (e) => {
     const { cardDeck } = this.state;
     this.shuffleDeck(cardDeck);
     this.dealHands();
     this.setState({
-      gameStart: true
-    })
-
-
+      gameStart: true,
+    });
   };
 
   dealHands = () => {
@@ -473,75 +471,66 @@ class CardGame extends Component {
     });
   };
 
-  
-  
   flipped = (e) => {
     let { player1hand, player2hand } = this.state;
-    console.log(e.target.id)
-    
+    console.log(e.target.id);
+
     if (e.target.className === "card1") {
-      
       if (player1hand[e.target.id].isFlipped === false) {
         player1hand[e.target.id].isFlipped = true;
-        console.log("false", player1hand[e.target.id])
+        console.log("false", player1hand[e.target.id]);
       } else {
         player1hand[e.target.id].isFlipped = false;
         // console.log("true", player1hand[e.target.id])
-        
       }
-      
+
       this.setState({
-        player1hand: player1hand
+        player1hand: player1hand,
       });
     }
-    
+
     if (e.target.className === "card2") {
-      
       if (player2hand[e.target.id].isFlipped === false) {
         player2hand[e.target.id].isFlipped = true;
-        console.log("false", player2hand[e.target.id])
+        console.log("false", player2hand[e.target.id]);
       } else {
         player2hand[e.target.id].isFlipped = false;
         // console.log("true", player1hand[e.target.id])
       }
-      
+
       this.setState({
-        player2hand: player2hand
+        player2hand: player2hand,
       });
-      
     }
-  }
-  
+  };
+
   componentDidUpdate() {
     console.log(this.state);
   }
-  
-  Game = () =>{
-    const {gameStart, player1hand} = this.state;
 
-      if (gameStart){
-        return(
-          <GameBoard
-          player1hand={player1hand}
-          flipped={this.flipped}
-        />
-        ) 
-      }
+  Game = () => {
+    const { gameStart, player1hand } = this.state;
 
-  }
-
-
+    if (gameStart) {
+      return <GameBoard player1hand={player1hand} flipped={this.flipped} />;
+    }
+  };
 
   render() {
-    const { cardDeck, player1hand, player2hand, isFlipped, gameStart } = this.state;
+    const {
+      cardDeck,
+      player1hand,
+      player2hand,
+      isFlipped,
+      gameStart,
+    } = this.state;
     // console.log("game started", gameStart)
-    
+
     return (
-      <div className="board">
-      <button onClick={this.handleStart}>Start Game</button>
+      <div>
+        <button onClick={this.handleStart}>Start Game</button>
 
-      {this.Game()}
-
+        {this.Game()}
 
         {/* <div className="deck1">
           {player1hand.map((card, i) => {
@@ -578,10 +567,6 @@ class CardGame extends Component {
           })
           }
         </div> */}
-
-
-
-
       </div>
     );
   }
