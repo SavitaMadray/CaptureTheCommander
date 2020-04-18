@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/gameboard.css";
+import "../Css/gameboard.css";
 import Card from "./card";
 
 export default function GameBoard(props) {
@@ -27,6 +27,7 @@ export default function GameBoard(props) {
               isFlipped={card.isFlipped}
               clicked={flipped}
               cardbackImg={card.backImg}
+              cardfrontImg={card.frontImg}
               cardNum={card.num}
               classname="card1"
             />

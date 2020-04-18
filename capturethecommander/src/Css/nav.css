@@ -1,0 +1,21 @@
+.Nav {
+  display: flex;
+  padding: 15px;
+  background-color: rgba(61, 63, 65, 0.324);
+  justify-content: space-between;
+}
+
+.navImg {
+  height: 50px;
+}
+section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  color: black;
+  font-size: 1.3em;
+  text-decoration: none;
+  padding: 15px;
+}

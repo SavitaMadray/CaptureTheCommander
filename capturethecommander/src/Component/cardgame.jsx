@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import "../CSS/cardgame.css";
+import "../Css/cardgame.css";
 import Card from "./card";
 import GameBoard from "./GameBoard";
+import Home from "./Home";
+import { Link } from "react-router-dom";
 
 class CardGame extends Component {
   constructor() {
@@ -517,56 +519,10 @@ class CardGame extends Component {
   };
 
   render() {
-    const {
-      cardDeck,
-      player1hand,
-      player2hand,
-      isFlipped,
-      gameStart,
-    } = this.state;
-    // console.log("game started", gameStart)
-
     return (
       <div>
-        <button onClick={this.handleStart}>Start Game</button>
-
+        <Home handleStart={this.handleStart} />
         {this.Game()}
-
-        {/* <div className="deck1">
-          {player1hand.map((card, i) => {
-            return (
-                <Card
-                  key={card.suit + card.num}  //key
-                  id={i}                      //id
-                  flipped={card.isFlipped}    //checking to see if card is flipped or not
-                  clicked={this.flipped}      //passing function through props to change
-                  cardbackImg={card.backImg}  //set image of card through props
-                  cardSuit={card.suit}        //set card suit through props
-                  cardNum={card.num}          //set card number through props
-                  classname="card1"           //set class name through props
-                />
-            )
-          })
-        }
-        </div>
-        <p>---------------------------------------------------------------------</p>
-        <div className="deck2">
-          {player2hand.map((card, i) => {
-            return (
-                <Card
-                  key={card.suit + card.num}  //key
-                  id={i}                      //id
-                  flipped={card.isFlipped}    //checking to see if card is flipped or not
-                  clicked={this.flipped}      //passing function through props to change
-                  cardbackImg={card.backImg}  //set image of card through props
-                  cardSuit={card.suit}        //set card suit through props
-                  cardNum={card.num}          //set card number through props
-                  classname="card2"           //set class name through props
-                />
-            )
-          })
-          }
-        </div> */}
       </div>
     );
   }
