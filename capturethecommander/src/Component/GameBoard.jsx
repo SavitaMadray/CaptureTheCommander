@@ -1,5 +1,5 @@
 import React from "react";
-import "./CSS/gameboard.css";
+import "../CSS/gameboard.css";
 import Card from "./card";
 
 export default function GameBoard(props) {

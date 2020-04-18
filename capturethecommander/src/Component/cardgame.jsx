@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./CSS/cardgame.css";
+import "../CSS/cardgame.css";
 import Card from "./card";
 import GameBoard from "./GameBoard";
 
