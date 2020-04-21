@@ -434,6 +434,10 @@ class CardGame extends Component {
     };
   }
 
+  componentDidMount() {
+    this.handleStart();
+  }
+
   shuffleDeck = (cardDeck) => {
     for (let i = 0; i < 1000; i++) {
       let location1 = Math.floor(Math.random() * cardDeck.length);
@@ -447,7 +451,7 @@ class CardGame extends Component {
     });
   };
 
-  handleStart = (e) => {
+  handleStart = () => {
     const { cardDeck } = this.state;
     this.shuffleDeck(cardDeck);
     this.dealHands();
@@ -510,21 +514,12 @@ class CardGame extends Component {
     console.log(this.state);
   }
 
-  Game = () => {
+  render() {
     const { gameStart, player1hand } = this.state;
-
     if (gameStart) {
       return <GameBoard player1hand={player1hand} flipped={this.flipped} />;
     }
-  };
-
-  render() {
-    return (
-      <div>
-        <Home handleStart={this.handleStart} />
-        {this.Game()}
-      </div>
-    );
+    return null;
   }
 }
 

@@ -11,8 +11,8 @@ export default function GameBoard(props) {
   let fourthRow = player1hand.slice(10, 12);
   let fifthRow = [player1hand[player1hand.length - 1]];
 
-  let cardFormation = [firstRow, secondRow, thirdRow, fourthRow, fifthRow];
-  console.log(player1hand);
+  // let cardFormation = [firstRow, secondRow, thirdRow, fourthRow, fifthRow];
+  // console.log(player1hand);
 
   // rule about what cards can be flipped?
 
@@ -93,26 +93,6 @@ export default function GameBoard(props) {
             );
           })}
         </section>
-
-        {/* {cardFormation.map((cardRow, idx) => {
-          let row = cardRow;
-          return row.map( (card, i) => {
-            // console.log(card.suit)
-            
-            
-            return <Card
-            key = {card.suit + card.num}
-            id = {i}
-            isFlipped ={card.isFlipped}
-            clicked ={flipped}
-            cardbackImg ={card.backImg}
-            cardNum = {card.num}
-            classname="card1"  
-            
-            //   handleCardFlip={() => handleCardFlip(idx + 1, card)}
-            />
-          });
-        })} */}
       </section>
     </div>
   );

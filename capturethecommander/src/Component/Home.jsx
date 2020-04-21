@@ -7,7 +7,9 @@ function Home(props) {
   return (
     <div>
       <h1>Welcome to Capture the Commander</h1>
-      <button onClick={handleStart}>Start Game</button>
+      <Link to="/cardgame">
+        <button>Start Game</button>
+      </Link>
     </div>
   );
 }
