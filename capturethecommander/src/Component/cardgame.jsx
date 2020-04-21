@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../CSS/cardgame.css";
-import Card from "./card";
 import GameBoard from "./GameBoard";
 
 class CardGame extends Component {
@@ -10,6 +9,7 @@ class CardGame extends Component {
     this.state = {
       cardDeck: [
         {
+          cardNum: 1,
           suit: "♠︎",
           num: "2",
           numVal: 2,
@@ -18,6 +18,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 2,
           suit: "♠︎",
           num: "3",
           numVal: 3,
@@ -26,6 +27,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 3,
           suit: "♠︎",
           num: "4",
           numVal: 4,
@@ -34,6 +36,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 4,
           suit: "♠︎",
           num: "5",
           numVal: 5,
@@ -42,6 +45,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 5,
           suit: "♠︎",
           num: "6",
           numVal: 6,
@@ -50,6 +54,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 6,
           suit: "♠︎",
           num: "7",
           numVal: 7,
@@ -58,6 +63,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 7,
           suit: "♠︎",
           num: "8",
           numVal: 8,
@@ -66,6 +72,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 8,
           suit: "♠︎",
           num: "9",
           numVal: 9,
@@ -74,6 +81,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 9,
           suit: "♠︎",
           num: "10",
           numVal: 10,
@@ -82,38 +90,43 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
-          suit: "♠︎",
-          num: "K",
-          numVal: 10,
-          backImg:
-            "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-          isFlipped: false,
-        },
-        {
-          suit: "♠︎",
-          num: "Q",
-          numVal: 10,
-          backImg:
-            "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-          isFlipped: false,
-        },
-        {
+          cardNum: 10,
           suit: "♠︎",
           num: "J",
-          numVal: 10,
+          numVal: 11,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           isFlipped: false,
         },
         {
+          cardNum: 11,
+          suit: "♠︎",
+          num: "Q",
+          numVal: 12,
+          backImg:
+            "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          isFlipped: false,
+        },
+        {
+          cardNum: 12,
+          suit: "♠︎",
+          num: "K",
+          numVal: 13,
+          backImg:
+            "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          isFlipped: false,
+        },
+        {
+          cardNum: 13,
           suit: "♠︎",
           num: "A",
-          numVal: 10,
+          numVal: 14,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           isFlipped: false,
         },
         {
+          cardNum: 14,
           suit: "♢",
           num: "2",
           numVal: 2,
@@ -122,6 +135,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 15,
           suit: "♢",
           num: "3",
           numVal: 3,
@@ -130,6 +144,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 16,
           suit: "♢",
           num: "4",
           numVal: 4,
@@ -138,6 +153,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 17,
           suit: "♢",
           num: "5",
           numVal: 5,
@@ -146,6 +162,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 18,
           suit: "♢",
           num: "6",
           numVal: 6,
@@ -154,6 +171,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 19,
           suit: "♢",
           num: "7",
           numVal: 7,
@@ -162,6 +180,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 20,
           suit: "♢",
           num: "8",
           numVal: 8,
@@ -170,6 +189,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 21,
           suit: "♢",
           num: "9",
           numVal: 9,
@@ -178,6 +198,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 22,
           suit: "♢",
           num: "10",
           numVal: 10,
@@ -186,6 +207,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 23,
           suit: "♢",
           num: "K",
           numVal: 10,
@@ -194,6 +216,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 24,
           suit: "♢",
           num: "Q",
           numVal: 10,
@@ -202,6 +225,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 25,
           suit: "♢",
           num: "J",
           numVal: 10,
@@ -210,6 +234,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 26,
           suit: "♢",
           num: "A",
           numVal: 10,
@@ -218,6 +243,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 27,
           suit: "♡",
           num: "2",
           numVal: 2,
@@ -226,6 +252,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 28,
           suit: "♡",
           num: "3",
           numVal: 3,
@@ -234,6 +261,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 29,
           suit: "♡",
           num: "4",
           numVal: 4,
@@ -242,6 +270,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 30,
           suit: "♡",
           num: "5",
           numVal: 5,
@@ -250,6 +279,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 31,
           suit: "♡",
           num: "6",
           numVal: 6,
@@ -257,7 +287,7 @@ class CardGame extends Component {
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           isFlipped: false,
         },
-        {
+        {cardNum: 32,
           suit: "♡",
           num: "7",
           numVal: 7,
@@ -265,7 +295,7 @@ class CardGame extends Component {
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           isFlipped: false,
         },
-        {
+        {cardNum: 33,
           suit: "♡",
           num: "8",
           numVal: 8,
@@ -274,6 +304,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 34,
           suit: "♡",
           num: "9",
           numVal: 9,
@@ -282,6 +313,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 35,
           suit: "♡",
           num: "10",
           numVal: 10,
@@ -290,6 +322,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 36,
           suit: "♡",
           num: "K",
           numVal: 10,
@@ -298,6 +331,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 37,
           suit: "♡",
           num: "Q",
           numVal: 10,
@@ -306,6 +340,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 38,
           suit: "♡",
           num: "J",
           numVal: 10,
@@ -314,6 +349,7 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 39,
           suit: "♡",
           num: "A",
           numVal: 10,
@@ -322,107 +358,147 @@ class CardGame extends Component {
           isFlipped: false,
         },
         {
+          cardNum: 40,
           suit: "♣︎",
           num: "2",
           numVal: 2,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28323__480.png",
           isFlipped: false,
         },
         {
+          cardNum: 41,
           suit: "♣︎",
           num: "3",
           numVal: 3,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28324__480.png",
           isFlipped: false,
         },
         {
+          cardNum: 42,
           suit: "♣︎",
           num: "4",
           numVal: 4,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28325__480.png",
           isFlipped: false,
         },
         {
+          cardNum: 43,
           suit: "♣︎",
           num: "5",
           numVal: 5,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28326__480.png",
           isFlipped: false,
         },
         {
+          cardNum: 44,
           suit: "♣︎",
           num: "6",
           numVal: 6,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28327__480.png",
           isFlipped: false,
         },
         {
+          cardNum: 45,
           suit: "♣︎",
           num: "7",
           numVal: 7,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28328__480.png",
           isFlipped: false,
         },
         {
+          cardNum: 46,
           suit: "♣︎",
           num: "8",
           numVal: 8,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28329__480.png",
           isFlipped: false,
         },
         {
+          cardNum: 47,
           suit: "♣︎",
           num: "9",
           numVal: 9,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28330__480.png",
           isFlipped: false,
         },
         {
+          cardNum: 48,
           suit: "♣︎",
           num: "10",
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/18/19/19/card-37621__480.png",
           isFlipped: false,
         },
         {
-          suit: "♣︎",
-          num: "K",
-          numVal: 10,
-          backImg:
-            "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-          isFlipped: false,
-        },
-        {
-          suit: "♣︎",
-          num: "Q",
-          numVal: 10,
-          backImg:
-            "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-          isFlipped: false,
-        },
-        {
+          cardNum: 49,
           suit: "♣︎",
           num: "J",
-          numVal: 10,
+          numVal: 11,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/56/jack-28332__480.png",
           isFlipped: false,
         },
         {
+          cardNum: 50,
           suit: "♣︎",
-          num: "A",
-          numVal: 10,
+          num: "Q",
+          numVal: 12,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/57/clubs-28334_1280.png",
+
+          isFlipped: false,
+        },
+        {
+          cardNum: 51,
+          suit: "♣︎",
+          num: "K",
+          numVal: 13,
+          backImg:
+            "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/56/king-28333_1280.png",
+          isFlipped: false,
+        },
+        {
+          cardNum: 52,
+          suit: "♣︎",
+          num: "A",
+          numVal: 14,
+          backImg:
+            "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+            frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/13/56/ace-28331__480.png",
           isFlipped: false,
         },
       ],
@@ -473,15 +549,20 @@ class CardGame extends Component {
 
   flipped = (e) => {
     let { player1hand, player2hand } = this.state;
-    console.log(e.target.id);
+    console.log("target: ", e.target.id);
 
     if (e.target.className === "card1") {
+      console.log("class card1, target: ", 
+      e.target,
+      e.target.className, 
+      e.target)
+      
       if (player1hand[e.target.id].isFlipped === false) {
         player1hand[e.target.id].isFlipped = true;
         console.log("false", player1hand[e.target.id]);
-      } else {
+      } 
+      else {
         player1hand[e.target.id].isFlipped = false;
-        // console.log("true", player1hand[e.target.id])
       }
 
       this.setState({
@@ -489,23 +570,22 @@ class CardGame extends Component {
       });
     }
 
-    if (e.target.className === "card2") {
-      if (player2hand[e.target.id].isFlipped === false) {
-        player2hand[e.target.id].isFlipped = true;
-        console.log("false", player2hand[e.target.id]);
-      } else {
-        player2hand[e.target.id].isFlipped = false;
-        // console.log("true", player1hand[e.target.id])
-      }
+    // if (e.target.className === "card2") {
+    //   if (player2hand[e.target.id].isFlipped === false) {
+    //     player2hand[e.target.id].isFlipped = true;
+    //     console.log("false", player2hand[e.target.id]);
+    //   } else {
+    //     player2hand[e.target.id].isFlipped = false;
+    //   }
 
-      this.setState({
-        player2hand: player2hand,
-      });
-    }
+    //   this.setState({
+    //     player2hand: player2hand,
+    //   });
+    // }
   };
 
   componentDidUpdate() {
-    console.log(this.state);
+    // console.log(this.state);
   }
 
   Game = () => {
@@ -517,15 +597,7 @@ class CardGame extends Component {
   };
 
   render() {
-    const {
-      cardDeck,
-      player1hand,
-      player2hand,
-      isFlipped,
-      gameStart,
-    } = this.state;
-    // console.log("game started", gameStart)
-
+    
     return (
       <div>
         <button onClick={this.handleStart}>Start Game</button>
