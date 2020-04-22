@@ -8,7 +8,8 @@
 .navImg {
   height: 50px;
 }
-section {
+
+.navSection {
   display: flex;
   justify-content: flex-end;
 }
