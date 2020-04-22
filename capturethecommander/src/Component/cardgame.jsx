@@ -118,7 +118,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161487_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884192_1280.png",
           isFlipped: false,
         },
         {
@@ -129,7 +129,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161488_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884203_1280.png",
           isFlipped: false,
         },
         {
@@ -140,7 +140,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161489_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884197_1280.png",
           isFlipped: false,
         },
         {
@@ -151,7 +151,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2014/03/25/17/01/spades-297839_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884187_1280.png",
           isFlipped: false,
         },
         {
@@ -261,7 +261,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161492_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/diamonds-884195_1280.png",
           isFlipped: false,
         },
         {
@@ -272,7 +272,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161491_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/diamonds-884199_1280.png",
           isFlipped: false,
         },
         {
@@ -283,7 +283,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161490_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/diamonds-884189_1280.png",
           isFlipped: false,
         },
         {
@@ -294,7 +294,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/14/00/ace-28344_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884185_1280.png",
           isFlipped: false,
         },
         {
@@ -404,7 +404,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161495_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884196_1280.png",
           isFlipped: false,
         },
         {
@@ -415,7 +415,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161494_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884201_1280.png",
           isFlipped: false,
         },
         {
@@ -426,7 +426,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161493_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884191_1280.png",
           isFlipped: false,
         },
         {
@@ -437,7 +437,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/14/04/ace-28357_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884186_1280.png",
           isFlipped: false,
         },
         {
@@ -547,7 +547,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161483_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884188_1280.png",
           isFlipped: false,
         },
         {
@@ -558,7 +558,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161484_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884198_1280.png",
 
           isFlipped: false,
         },
@@ -570,7 +570,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161485_1280.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884194_1280.png",
           isFlipped: false,
         },
         {
@@ -581,7 +581,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/56/ace-28331__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884184_1280.png",
           isFlipped: false,
         },
       ],
