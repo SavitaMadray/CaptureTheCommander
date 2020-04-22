@@ -206,7 +206,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://pixabay.com/vectors/six-diamonds-6-poker-playing-cards-28340/",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884168_1280.png",
           isFlipped: false,
         },
         {
@@ -294,8 +294,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://pixabay.com/vectors/ace-diamonds-poker-play-28344/",
-          frontImg: "",
+            "https://cdn.pixabay.com/photo/2012/04/11/14/00/ace-28344_1280.png",
           isFlipped: false,
         },
         {
@@ -449,7 +448,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28323__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/55/clubs-884148_1280.png",
           isFlipped: false,
         },
         {
@@ -460,7 +459,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28324__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884152_1280.png",
           isFlipped: false,
         },
         {
@@ -471,7 +470,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28325__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884156_1280.png",
           isFlipped: false,
         },
         {
@@ -482,7 +481,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28326__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884161_1280.png",
           isFlipped: false,
         },
         {
@@ -493,7 +492,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28327__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884167_1280.png",
           isFlipped: false,
         },
         {
@@ -504,7 +503,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28328__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884171_1280.png",
           isFlipped: false,
         },
         {
@@ -515,7 +514,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28329__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884175_1280.png",
           isFlipped: false,
         },
         {
@@ -526,7 +525,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28330__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884179_1280.png",
           isFlipped: false,
         },
         {
@@ -537,7 +536,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/18/19/19/card-37621__480.png",
+            "https://cdn.pixabay.com/photo/2015/08/11/11/55/clubs-884144_1280.png",
           isFlipped: false,
         },
         {
@@ -548,7 +547,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/56/jack-28332__480.png",
+            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161483_1280.png",
           isFlipped: false,
         },
         {
@@ -559,7 +558,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/57/clubs-28334_1280.png",
+            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161484_1280.png",
 
           isFlipped: false,
         },
@@ -571,7 +570,7 @@ class CardGame extends Component {
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           frontImg:
-            "https://cdn.pixabay.com/photo/2012/04/11/13/56/king-28333_1280.png",
+            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161485_1280.png",
           isFlipped: false,
         },
         {
@@ -636,16 +635,8 @@ class CardGame extends Component {
   };
 
   flipped = (e) => {
-    let { player1hand, player2hand } = this.state;
+    let { player1hand, player2hand, cardDeck } = this.state;
     console.log("target: ", e.target.id);
-
-    // if (e.target.className === "card") {
-    //   console.log(
-    //     "class card1, target: ",
-    //     e.target,
-    //     e.target.className,
-    //     e.target
-    //   );
 
     if (player1hand[e.target.id].isFlipped === false) {
       player1hand[e.target.id].isFlipped = true;
@@ -677,9 +668,15 @@ class CardGame extends Component {
   }
 
   render() {
-    const { gameStart, player1hand } = this.state;
+    const { gameStart, player1hand, cardDeck } = this.state;
     if (gameStart) {
-      return <GameBoard player1hand={player1hand} flipped={this.flipped} />;
+      return (
+        <GameBoard
+          player1hand={player1hand}
+          flipped={this.flipped}
+          cardDeck={cardDeck}
+        />
+      );
     }
     return null;
   }

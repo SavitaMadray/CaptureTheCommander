@@ -3,7 +3,7 @@ import "../Css/gameboard.css";
 import Card from "./card";
 
 export default function GameBoard(props) {
-  const { player1hand, flipped } = props;
+  const { player1hand, flipped, cardDeck } = props;
 
   let firstRow = player1hand.slice(0, 4); //0,1,2,3
   let secondRow = player1hand.slice(4, 7);
@@ -86,6 +86,7 @@ export default function GameBoard(props) {
                 isFlipped={card.isFlipped}
                 clicked={flipped}
                 cardbackImg={card.backImg}
+                cardfrontImg={card.frontImg}
                 cardNum={card.num}
               />
             );
