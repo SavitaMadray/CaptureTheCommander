@@ -18,6 +18,8 @@ class CardGame extends Component {
           numVal: 2,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884151_1280.png",
           isFlipped: false,
         },
         {
@@ -27,6 +29,8 @@ class CardGame extends Component {
           numVal: 3,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884155_1280.png",
           isFlipped: false,
         },
         {
@@ -36,6 +40,8 @@ class CardGame extends Component {
           numVal: 4,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884160_1280.png",
           isFlipped: false,
         },
         {
@@ -45,6 +51,8 @@ class CardGame extends Component {
           numVal: 5,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884165_1280.png",
           isFlipped: false,
         },
         {
@@ -54,6 +62,8 @@ class CardGame extends Component {
           numVal: 6,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884170_1280.png",
           isFlipped: false,
         },
         {
@@ -63,6 +73,8 @@ class CardGame extends Component {
           numVal: 7,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884174_1280.png",
           isFlipped: false,
         },
         {
@@ -72,6 +84,8 @@ class CardGame extends Component {
           numVal: 8,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884178_1280.png",
           isFlipped: false,
         },
         {
@@ -81,6 +95,8 @@ class CardGame extends Component {
           numVal: 9,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884183_1280.png",
           isFlipped: false,
         },
         {
@@ -90,6 +106,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/55/spades-884147_1280.png",
           isFlipped: false,
         },
         {
@@ -99,6 +117,8 @@ class CardGame extends Component {
           numVal: 11,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161487_1280.png",
           isFlipped: false,
         },
         {
@@ -108,6 +128,8 @@ class CardGame extends Component {
           numVal: 12,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161488_1280.png",
           isFlipped: false,
         },
         {
@@ -117,6 +139,8 @@ class CardGame extends Component {
           numVal: 13,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161489_1280.png",
           isFlipped: false,
         },
         {
@@ -126,6 +150,8 @@ class CardGame extends Component {
           numVal: 14,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2014/03/25/17/01/spades-297839_1280.png",
           isFlipped: false,
         },
         {
@@ -135,6 +161,8 @@ class CardGame extends Component {
           numVal: 2,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/55/diamonds-884149_1280.png",
           isFlipped: false,
         },
         {
@@ -144,6 +172,8 @@ class CardGame extends Component {
           numVal: 3,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884153_1280.png",
           isFlipped: false,
         },
         {
@@ -153,6 +183,8 @@ class CardGame extends Component {
           numVal: 4,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884157_1280.png",
           isFlipped: false,
         },
         {
@@ -162,6 +194,8 @@ class CardGame extends Component {
           numVal: 5,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884162_1280.png",
           isFlipped: false,
         },
         {
@@ -171,6 +205,8 @@ class CardGame extends Component {
           numVal: 6,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://pixabay.com/vectors/six-diamonds-6-poker-playing-cards-28340/",
           isFlipped: false,
         },
         {
@@ -180,6 +216,8 @@ class CardGame extends Component {
           numVal: 7,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884172_1280.png",
           isFlipped: false,
         },
         {
@@ -189,6 +227,8 @@ class CardGame extends Component {
           numVal: 8,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884176_1280.png",
           isFlipped: false,
         },
         {
@@ -198,6 +238,8 @@ class CardGame extends Component {
           numVal: 9,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884180_1280.png",
           isFlipped: false,
         },
         {
@@ -207,6 +249,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/55/diamonds-884145_1280.png",
           isFlipped: false,
         },
         {
@@ -216,6 +260,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161492_1280.png",
           isFlipped: false,
         },
         {
@@ -225,6 +271,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161491_1280.png",
           isFlipped: false,
         },
         {
@@ -234,6 +282,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2013/07/13/13/45/playing-card-161490_1280.png",
           isFlipped: false,
         },
         {
@@ -243,6 +293,9 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://pixabay.com/vectors/ace-diamonds-poker-play-28344/",
+          frontImg: "",
           isFlipped: false,
         },
         {
@@ -252,6 +305,8 @@ class CardGame extends Component {
           numVal: 2,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/55/hearts-884150_1280.png",
           isFlipped: false,
         },
         {
@@ -261,6 +316,8 @@ class CardGame extends Component {
           numVal: 3,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884154_1280.png",
           isFlipped: false,
         },
         {
@@ -270,6 +327,8 @@ class CardGame extends Component {
           numVal: 4,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884159_1280.png",
           isFlipped: false,
         },
         {
@@ -279,6 +338,8 @@ class CardGame extends Component {
           numVal: 5,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884163_1280.png",
           isFlipped: false,
         },
         {
@@ -288,6 +349,8 @@ class CardGame extends Component {
           numVal: 6,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884169_1280.png",
           isFlipped: false,
         },
         {
@@ -297,6 +360,8 @@ class CardGame extends Component {
           numVal: 7,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884173_1280.png",
           isFlipped: false,
         },
         {
@@ -306,6 +371,8 @@ class CardGame extends Component {
           numVal: 8,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884177_1280.png",
           isFlipped: false,
         },
         {
@@ -315,6 +382,8 @@ class CardGame extends Component {
           numVal: 9,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884181_1280.png",
           isFlipped: false,
         },
         {
@@ -324,6 +393,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2015/08/11/11/55/hearts-884146_1280.png",
           isFlipped: false,
         },
         {
@@ -333,6 +404,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161495_1280.png",
           isFlipped: false,
         },
         {
@@ -342,6 +415,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161494_1280.png",
           isFlipped: false,
         },
         {
@@ -351,6 +426,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2013/07/13/13/46/playing-card-161493_1280.png",
           isFlipped: false,
         },
         {
@@ -360,6 +437,8 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
+          frontImg:
+            "https://cdn.pixabay.com/photo/2012/04/11/14/04/ace-28357_1280.png",
           isFlipped: false,
         },
         {

@@ -1,14 +1,2 @@
-.board {
-  background-color: lightgreen;
-}
 
-.card {
-  background: linear-gradient(black, gray);
-  align-items: center;
-  justify-self: center;
-  width: 100px;
-  height: 150px;
-  border: 2px solid grey;
-  border-radius: 5px;
-  color: white;
-}
+
