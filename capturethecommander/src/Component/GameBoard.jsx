@@ -17,8 +17,8 @@ export default function GameBoard(props) {
   // rule about what cards can be flipped?
 
   return (
-    <div className="Board">
-      <section className="rows">
+    <div className="board">
+      <section className="row1">
         {firstRow.map((card, i) => {
           return (
             <Card
@@ -30,7 +30,6 @@ export default function GameBoard(props) {
               cardfrontImg={card.frontImg}
               cardNum={card.num}
               cardfrontImg={card.frontImg}
-              classname="card1"
             />
           );
         })}
@@ -44,7 +43,6 @@ export default function GameBoard(props) {
                 clicked={flipped}
                 cardbackImg={card.backImg}
                 cardNum={card.num}
-                classname="card1"
               />
             );
           })}
@@ -59,7 +57,6 @@ export default function GameBoard(props) {
                 clicked={flipped}
                 cardbackImg={card.backImg}
                 cardNum={card.num}
-                classname="card1"
               />
             );
           })}
@@ -74,7 +71,6 @@ export default function GameBoard(props) {
                 clicked={flipped}
                 cardbackImg={card.backImg}
                 cardNum={card.num}
-                classname="card1"
               />
             );
           })}
@@ -89,7 +85,6 @@ export default function GameBoard(props) {
                 clicked={flipped}
                 cardbackImg={card.backImg}
                 cardNum={card.num}
-                classname="card1"
               />
             );
           })}

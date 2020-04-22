@@ -2,24 +2,7 @@
   background-color: lightgreen;
 }
 
-.deck1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
-
-.card1 {
-  background: linear-gradient(black, gray);
-  align-items: center;
-  justify-self: center;
-  width: 100px;
-  height: 150px;
-  border: 2px solid grey;
-  border-radius: 5px;
-  color: white;
-}
-
-.card2 {
+.card {
   background: linear-gradient(black, gray);
   align-items: center;
   justify-self: center;

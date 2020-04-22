@@ -560,25 +560,24 @@ class CardGame extends Component {
     let { player1hand, player2hand } = this.state;
     console.log("target: ", e.target.id);
 
-    if (e.target.className === "card1") {
-      console.log(
-        "class card1, target: ",
-        e.target,
-        e.target.className,
-        e.target
-      );
+    // if (e.target.className === "card") {
+    //   console.log(
+    //     "class card1, target: ",
+    //     e.target,
+    //     e.target.className,
+    //     e.target
+    //   );
 
-      if (player1hand[e.target.id].isFlipped === false) {
-        player1hand[e.target.id].isFlipped = true;
-        console.log("false", player1hand[e.target.id]);
-      } else {
-        player1hand[e.target.id].isFlipped = false;
-      }
-
-      this.setState({
-        player1hand: player1hand,
-      });
+    if (player1hand[e.target.id].isFlipped === false) {
+      player1hand[e.target.id].isFlipped = true;
+      console.log("false", player1hand[e.target.id]);
+    } else {
+      player1hand[e.target.id].isFlipped = false;
     }
+
+    this.setState({
+      player1hand: player1hand,
+    });
 
     // if (e.target.className === "card2") {
     //   if (player2hand[e.target.id].isFlipped === false) {
