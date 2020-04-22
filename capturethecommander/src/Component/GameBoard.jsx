@@ -39,7 +39,7 @@ export default function GameBoard(props) {
             return (
               <Card
                 key={card.suit + card.num}
-                id={i}
+                id={i + 4}
                 isFlipped={card.isFlipped}
                 clicked={flipped}
                 cardbackImg={card.backImg}
@@ -54,7 +54,7 @@ export default function GameBoard(props) {
             return (
               <Card
                 key={card.suit + card.num}
-                id={i}
+                id={i + 7}
                 isFlipped={card.isFlipped}
                 clicked={flipped}
                 cardbackImg={card.backImg}
@@ -69,7 +69,7 @@ export default function GameBoard(props) {
             return (
               <Card
                 key={card.suit + card.num}
-                id={i}
+                id={i + 10}
                 isFlipped={card.isFlipped}
                 clicked={flipped}
                 cardbackImg={card.backImg}
@@ -84,7 +84,7 @@ export default function GameBoard(props) {
             return (
               <Card
                 key={card.suit + card.num}
-                id={i}
+                id={i + 12}
                 isFlipped={card.isFlipped}
                 clicked={flipped}
                 cardbackImg={card.backImg}
