@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import "../CSS/cardgame.css";
+import "../Css/cardgame.css";
+import Card from "./card";
 import GameBoard from "./GameBoard";
+import Home from "./Home";
+import { Link } from "react-router-dom";
 
 class CardGame extends Component {
   constructor() {
@@ -287,7 +290,8 @@ class CardGame extends Component {
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           isFlipped: false,
         },
-        {cardNum: 32,
+        {
+          cardNum: 32,
           suit: "♡",
           num: "7",
           numVal: 7,
@@ -295,7 +299,8 @@ class CardGame extends Component {
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
           isFlipped: false,
         },
-        {cardNum: 33,
+        {
+          cardNum: 33,
           suit: "♡",
           num: "8",
           numVal: 8,
@@ -375,7 +380,7 @@ class CardGame extends Component {
           numVal: 3,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28324__480.png",
           isFlipped: false,
         },
@@ -397,7 +402,7 @@ class CardGame extends Component {
           numVal: 5,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28326__480.png",
           isFlipped: false,
         },
@@ -408,7 +413,7 @@ class CardGame extends Component {
           numVal: 6,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28327__480.png",
           isFlipped: false,
         },
@@ -419,7 +424,7 @@ class CardGame extends Component {
           numVal: 7,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28328__480.png",
           isFlipped: false,
         },
@@ -430,7 +435,7 @@ class CardGame extends Component {
           numVal: 8,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28329__480.png",
           isFlipped: false,
         },
@@ -441,7 +446,7 @@ class CardGame extends Component {
           numVal: 9,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/53/clubs-28330__480.png",
           isFlipped: false,
         },
@@ -452,7 +457,7 @@ class CardGame extends Component {
           numVal: 10,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/18/19/19/card-37621__480.png",
           isFlipped: false,
         },
@@ -463,7 +468,7 @@ class CardGame extends Component {
           numVal: 11,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/56/jack-28332__480.png",
           isFlipped: false,
         },
@@ -474,7 +479,7 @@ class CardGame extends Component {
           numVal: 12,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/57/clubs-28334_1280.png",
 
           isFlipped: false,
@@ -486,7 +491,7 @@ class CardGame extends Component {
           numVal: 13,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/56/king-28333_1280.png",
           isFlipped: false,
         },
@@ -497,7 +502,7 @@ class CardGame extends Component {
           numVal: 14,
           backImg:
             "https://cdn.pixabay.com/photo/2019/01/17/08/23/flowers-3937297_1280.jpg",
-            frontImg:
+          frontImg:
             "https://cdn.pixabay.com/photo/2012/04/11/13/56/ace-28331__480.png",
           isFlipped: false,
         },
@@ -506,6 +511,10 @@ class CardGame extends Component {
       player2hand: [],
       gameStart: false,
     };
+  }
+
+  componentDidMount() {
+    this.handleStart();
   }
 
   shuffleDeck = (cardDeck) => {
@@ -521,7 +530,7 @@ class CardGame extends Component {
     });
   };
 
-  handleStart = (e) => {
+  handleStart = () => {
     const { cardDeck } = this.state;
     this.shuffleDeck(cardDeck);
     this.dealHands();
@@ -552,16 +561,17 @@ class CardGame extends Component {
     console.log("target: ", e.target.id);
 
     if (e.target.className === "card1") {
-      console.log("class card1, target: ", 
-      e.target,
-      e.target.className, 
-      e.target)
-      
+      console.log(
+        "class card1, target: ",
+        e.target,
+        e.target.className,
+        e.target
+      );
+
       if (player1hand[e.target.id].isFlipped === false) {
         player1hand[e.target.id].isFlipped = true;
         console.log("false", player1hand[e.target.id]);
-      } 
-      else {
+      } else {
         player1hand[e.target.id].isFlipped = false;
       }
 
@@ -585,62 +595,15 @@ class CardGame extends Component {
   };
 
   componentDidUpdate() {
-    // console.log(this.state);
+    console.log(this.state);
   }
 
-  Game = () => {
+  render() {
     const { gameStart, player1hand } = this.state;
-
     if (gameStart) {
       return <GameBoard player1hand={player1hand} flipped={this.flipped} />;
     }
-  };
-
-  render() {
-    
-    return (
-      <div>
-        <button onClick={this.handleStart}>Start Game</button>
-
-        {this.Game()}
-
-        {/* <div className="deck1">
-          {player1hand.map((card, i) => {
-            return (
-                <Card
-                  key={card.suit + card.num}  //key
-                  id={i}                      //id
-                  flipped={card.isFlipped}    //checking to see if card is flipped or not
-                  clicked={this.flipped}      //passing function through props to change
-                  cardbackImg={card.backImg}  //set image of card through props
-                  cardSuit={card.suit}        //set card suit through props
-                  cardNum={card.num}          //set card number through props
-                  classname="card1"           //set class name through props
-                />
-            )
-          })
-        }
-        </div>
-        <p>---------------------------------------------------------------------</p>
-        <div className="deck2">
-          {player2hand.map((card, i) => {
-            return (
-                <Card
-                  key={card.suit + card.num}  //key
-                  id={i}                      //id
-                  flipped={card.isFlipped}    //checking to see if card is flipped or not
-                  clicked={this.flipped}      //passing function through props to change
-                  cardbackImg={card.backImg}  //set image of card through props
-                  cardSuit={card.suit}        //set card suit through props
-                  cardNum={card.num}          //set card number through props
-                  classname="card2"           //set class name through props
-                />
-            )
-          })
-          }
-        </div> */}
-      </div>
-    );
+    return null;
   }
 }
 
