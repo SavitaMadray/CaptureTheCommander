@@ -1,27 +1,37 @@
 import React from "react"
 
 function Card(props) {
-    let isFlipped = props.isFlipped
+    const { isFlipped, id, cardbackImg, cardfrontImg, clicked, classname } = props
+
+
 
     if (isFlipped === false) {
         return (
             <img
-                id = {props.id}
-                src={props.cardbackImg}
+                id={id}
+                src={cardbackImg}
                 alt="broken pic"
-                onClick={props.clicked}
-                className = {props.classname}
+                onClick={clicked}
+                className={classname}
             />
         )
-    }else{
-        return(
-            <p
-            id = {props.id}
-            onClick = {props.clicked}
-            className = {props.classname}
-            >
-                {props.cardSuit} {props.cardNum}
-            </p>
+    } else {
+        return (
+            <img
+                id={id}
+                src={cardfrontImg}
+                alt="broken pic"
+                onClick={clicked}
+                className={classname}
+            />
+
+            // <p
+            // id = {props.id}
+            // onClick = {props.clicked}
+            // className = {props.classname}
+            // >
+            //     {props.cardSuit} {props.cardNum}
+            // </p>
         )
     }
 }
