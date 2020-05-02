@@ -4,7 +4,7 @@ import Card from "./card";
 import GameBoard from "./GameBoard";
 import Home from "./Home";
 import { Link } from "react-router-dom";
-import {dealHands} from "../scripts/CardDeck"
+import { dealHands } from "../scripts/CardDeck";
 
 class CardGame extends Component {
   constructor() {
@@ -14,7 +14,8 @@ class CardGame extends Component {
       player1hand: [],
       player2hand: [],
       gameStart: false,
-      isActive: false,
+      player1Active: false,
+      player2Active: false,
     };
   }
 
@@ -22,7 +23,6 @@ class CardGame extends Component {
     this.handleStart();
   }
 
-  
   handleStart = () => {
     let playerHands = dealHands();
     this.setState({
@@ -30,36 +30,29 @@ class CardGame extends Component {
       player2hand: playerHands.player2hand,
       gameStart: true,
     });
+    this.firstMove();
   };
 
-
   firstMove = () => {
-    let coin = Math.floor(Math.random() * 100);
+    let coin = Math.floor(Math.random() * 2);
     if (coin % 2 === 0) {
       console.log("player 1", coin);
       this.setState({
-        isActive: true,
+        player1Active: true,
       });
     } else {
       console.log("player 2", coin);
+      this.setState({
+        player2Active: true,
+      });
     }
   };
 
-  handleStart = () => {
-    const { cardDeck } = this.state;
-    this.shuffleDeck(cardDeck);
-    this.dealHands();
-    this.firstMove();
-    this.setState({
-      gameStart: true,
-    });
-  };
-
   flipped = (e) => {
-    let { player1hand, player2hand, isActive } = this.state;
+    let { player1hand, player2hand, player1Active, player2Active } = this.state;
     console.log("target: ", e.target.id);
 
-    if (e.target.dataset.hand === "player1" && isActive === true) {
+    if (e.target.dataset.hand === "player1" && player1Active === true) {
       if (player1hand[e.target.id].isFlipped === false) {
         player1hand[e.target.id].isFlipped = true;
         console.log("false", player1hand[e.target.id]);
@@ -71,7 +64,7 @@ class CardGame extends Component {
         player1hand: player1hand,
       });
     }
-    if (e.target.dataset.hand === "player2" && isActive === true) {
+    if (e.target.dataset.hand === "player2" && player2Active === true) {
       if (player2hand[e.target.id].isFlipped === false) {
         player2hand[e.target.id].isFlipped = true;
         console.log("false", player2hand[e.target.id]);
