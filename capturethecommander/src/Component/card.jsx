@@ -1,7 +1,7 @@
 import React from "react";
 
 function Card(props) {
-  const { isFlipped, id, cardbackImg, cardfrontImg, clicked } = props;
+  const { isFlipped, id, cardbackImg, cardfrontImg, clicked, hand } = props;
 
   if (isFlipped === false) {
     return (
@@ -11,6 +11,7 @@ function Card(props) {
         alt="broken pic"
         onClick={clicked}
         className="card"
+        data-hand={hand}
       />
     );
   } else {
@@ -21,6 +22,7 @@ function Card(props) {
         alt="broken pic"
         onClick={clicked}
         className="card"
+        data-hand={hand}
       />
 
       // <p
