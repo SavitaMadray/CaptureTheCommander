@@ -1,8 +1,17 @@
 .board {
-  background-color: rgb(24, 82, 24);
+  display: flex;
+  background-color: rgba(1, 53, 1, 0.824);
   /* transform: rotate(90deg); */
+  justify-content: center;
+  height: 100vh;
 }
 
+.hand1,
+.hand2 {
+  padding-top: 50px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
 .card {
   align-items: center;
   justify-self: center;
@@ -12,4 +21,10 @@
   color: white;
   background-color: black;
   margin: 2px;
+  box-shadow: 10px 5px rgba(28, 27, 27, 0.262);
+  margin-left: 15px;
+}
+
+h1 {
+  text-align: center;
 }
