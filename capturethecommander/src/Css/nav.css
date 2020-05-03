@@ -3,10 +3,11 @@
   padding: 15px;
   background-color: rgba(61, 63, 65, 0.324);
   justify-content: space-between;
+  font-family: "Fontdiner Swanky", cursive;
 }
 
 .navImg {
-  height: 50px;
+  height: 40px;
 }
 
 .navSection {

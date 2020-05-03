@@ -1,7 +1,16 @@
 import React from "react";
 
 function Card(props) {
-  const { isFlipped, id, cardbackImg, cardfrontImg, clicked, hand } = props;
+  const {
+    isFlipped,
+    id,
+    cardbackImg,
+    cardfrontImg,
+    clicked,
+    hand,
+    gameMoves,
+    numVal,
+  } = props;
 
   if (isFlipped === false) {
     return (
@@ -9,9 +18,13 @@ function Card(props) {
         id={id}
         src={cardbackImg}
         alt="broken pic"
-        onClick={clicked}
+        onClick={(e) => {
+          clicked(e);
+          gameMoves(e);
+        }}
         className="card"
         data-hand={hand}
+        data-numval={numVal}
       />
     );
   } else {
@@ -20,9 +33,13 @@ function Card(props) {
         id={id}
         src={cardfrontImg}
         alt="broken pic"
-        onClick={clicked}
+        onClick={(e) => {
+          clicked(e);
+          gameMoves(e);
+        }}
         className="card"
         data-hand={hand}
+        data-numval={numVal}
       />
 
       // <p
