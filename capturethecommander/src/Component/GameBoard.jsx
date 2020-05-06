@@ -3,7 +3,7 @@ import "../Css/gameboard.css";
 import Card from "./card";
 
 export default function GameBoard(props) {
-  const { player1hand, flipped, player2hand, message, gameMoves } = props;
+  const { player1hand, flipCard, player2hand, message, gameMoves } = props;
 
   let firstRowP1 = player1hand.slice(0, 4); //0,1,2,3
   let secondRowP1 = player1hand.slice(4, 7);
@@ -20,7 +20,7 @@ export default function GameBoard(props) {
   // let cardFormation = [firstRow, secondRow, thirdRow, fourthRow, fifthRow];
   // console.log(player1hand);
 
-  // rule about what cards can be flipped?
+  // rule about what cards can be flipCard?
 
   return (
     <div className="board">
@@ -34,7 +34,7 @@ export default function GameBoard(props) {
                   key={card.suit + card.num}
                   id={i}
                   isFlipped={card.isFlipped}
-                  clicked={flipped}
+                  clicked={flipCard}
                   cardbackImg={card.backImg}
                   cardfrontImg={card.frontImg}
                   cardNum={card.num}
@@ -52,7 +52,7 @@ export default function GameBoard(props) {
                     key={card.suit + card.num}
                     id={i + 4}
                     isFlipped={card.isFlipped}
-                    clicked={flipped}
+                    clicked={flipCard}
                     cardbackImg={card.backImg}
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
@@ -71,7 +71,7 @@ export default function GameBoard(props) {
                     key={card.suit + card.num}
                     id={i + 7}
                     isFlipped={card.isFlipped}
-                    clicked={flipped}
+                    clicked={flipCard}
                     cardbackImg={card.backImg}
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
@@ -90,7 +90,7 @@ export default function GameBoard(props) {
                     key={card.suit + card.num}
                     id={i + 10}
                     isFlipped={card.isFlipped}
-                    clicked={flipped}
+                    clicked={flipCard}
                     cardbackImg={card.backImg}
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
@@ -108,7 +108,7 @@ export default function GameBoard(props) {
                     key={card.suit + card.num}
                     id={i + 12}
                     isFlipped={card.isFlipped}
-                    clicked={flipped}
+                    clicked={flipCard}
                     cardbackImg={card.backImg}
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
@@ -131,7 +131,7 @@ export default function GameBoard(props) {
                   key={card.suit + card.num}
                   id={i + 12}
                   isFlipped={card.isFlipped}
-                  clicked={flipped}
+                  clicked={flipCard}
                   cardbackImg={card.backImg}
                   cardfrontImg={card.frontImg}
                   cardNum={card.num}
@@ -149,7 +149,7 @@ export default function GameBoard(props) {
                     key={card.suit + card.num}
                     id={i + 10}
                     isFlipped={card.isFlipped}
-                    clicked={flipped}
+                    clicked={flipCard}
                     cardbackImg={card.backImg}
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
@@ -168,7 +168,7 @@ export default function GameBoard(props) {
                     key={card.suit + card.num}
                     id={i + 7}
                     isFlipped={card.isFlipped}
-                    clicked={flipped}
+                    clicked={flipCard}
                     cardbackImg={card.backImg}
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
@@ -187,7 +187,7 @@ export default function GameBoard(props) {
                     key={card.suit + card.num}
                     id={i + 4}
                     isFlipped={card.isFlipped}
-                    clicked={flipped}
+                    clicked={flipCard}
                     cardbackImg={card.backImg}
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
@@ -206,7 +206,7 @@ export default function GameBoard(props) {
                     key={card.suit + card.num}
                     id={i}
                     isFlipped={card.isFlipped}
-                    clicked={flipped}
+                    clicked={flipCard}
                     cardbackImg={card.backImg}
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
