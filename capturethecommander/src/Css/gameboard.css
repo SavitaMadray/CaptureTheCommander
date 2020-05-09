@@ -1,14 +1,20 @@
 .board {
-  display: flex;
   background-color: rgba(1, 53, 1, 0.824);
-  /* transform: rotate(90deg); */
   justify-content: center;
   height: 100vh;
+  font-family: "Fontdiner Swanky", cursive;
+}
+
+.players {
+  /* transform: rotate(90deg); */
+  margin: 0px;
+  padding-top: 0px;
+  display: flex;
 }
 
 .hand1,
 .hand2 {
-  padding-top: 50px;
+  padding-top: 10px;
   margin-left: 120px;
   margin-right: 120px;
 }
@@ -21,10 +27,19 @@
   color: white;
   background-color: black;
   margin: 2px;
-  box-shadow: 10px 5px rgba(28, 27, 27, 0.262);
+  box-shadow: 7px 10px 12px -5px rgba(8, 8, 8, 0.66);
   margin-left: 15px;
 }
 
 h1 {
   text-align: center;
+}
+
+.firstMove {
+  text-align: center;
+  margin: 0px;
+  padding-top: 12px;
+  padding-bottom: 0px;
+  color: white;
+  font-size: 1.2em;
 }

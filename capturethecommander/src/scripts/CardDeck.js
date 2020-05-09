@@ -9,6 +9,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884151_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 2,
@@ -20,6 +21,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884155_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 3,
@@ -31,6 +33,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884160_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 4,
@@ -42,6 +45,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884165_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 5,
@@ -53,6 +57,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884170_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 6,
@@ -64,6 +69,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884174_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 7,
@@ -75,6 +81,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884178_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 8,
@@ -86,6 +93,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884183_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 9,
@@ -97,6 +105,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/55/spades-884147_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 10,
@@ -108,6 +117,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884192_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 11,
@@ -119,6 +129,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884203_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 12,
@@ -130,6 +141,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884197_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 13,
@@ -141,6 +153,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884187_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 14,
@@ -152,6 +165,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/55/diamonds-884149_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 15,
@@ -163,6 +177,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884153_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 16,
@@ -174,6 +189,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884157_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 17,
@@ -185,6 +201,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884162_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 18,
@@ -196,6 +213,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884168_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 19,
@@ -207,6 +225,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884172_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 20,
@@ -218,6 +237,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884176_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 21,
@@ -229,6 +249,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884180_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 22,
@@ -240,6 +261,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/55/diamonds-884145_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 23,
@@ -251,6 +273,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/diamonds-884195_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 24,
@@ -262,6 +285,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/diamonds-884199_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 25,
@@ -273,6 +297,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/diamonds-884189_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 26,
@@ -284,6 +309,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884185_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 27,
@@ -295,6 +321,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/55/hearts-884150_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 28,
@@ -306,6 +333,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884154_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 29,
@@ -317,6 +345,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884159_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 30,
@@ -328,6 +357,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884163_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 31,
@@ -339,6 +369,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884169_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 32,
@@ -350,6 +381,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884173_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 33,
@@ -361,6 +393,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884177_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 34,
@@ -372,6 +405,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884181_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 35,
@@ -383,6 +417,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/55/hearts-884146_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 36,
@@ -394,6 +429,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884196_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 37,
@@ -405,6 +441,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884201_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 38,
@@ -416,6 +453,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884191_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 39,
@@ -427,6 +465,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884186_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 40,
@@ -438,6 +477,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/55/clubs-884148_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 41,
@@ -449,6 +489,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884152_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 42,
@@ -460,6 +501,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884156_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 43,
@@ -471,6 +513,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884161_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 44,
@@ -482,6 +525,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884167_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 45,
@@ -493,6 +537,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884171_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 46,
@@ -504,6 +549,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884175_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 47,
@@ -515,6 +561,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884179_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 48,
@@ -526,6 +573,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/55/clubs-884144_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 49,
@@ -537,6 +585,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884188_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 50,
@@ -549,6 +598,7 @@ let deck = [
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884198_1280.png",
 
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 51,
@@ -560,6 +610,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884194_1280.png",
     isFlipped: false,
+    hidden: false,
   },
   {
     cardNum: 52,
@@ -571,6 +622,7 @@ let deck = [
     frontImg:
       "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884184_1280.png",
     isFlipped: false,
+    hidden: false,
   },
 ];
 
