@@ -21,6 +21,8 @@ class CardGame extends Component {
       player1AttackedCard: null,
       player2AttackingCard: null,
       player2AttackedCard: null,
+      attackingCardIndex: null,
+      attackedCardIndex: null,
       message: "",
     };
   }
@@ -58,8 +60,8 @@ class CardGame extends Component {
 
   gameMoves = (e) => {
     let {
-      player1Active,
-      player2Active,
+      attackedCardIndex,
+      attackingCardIndex,
       player1hand,
       player2hand,
       playerturn,
@@ -68,64 +70,92 @@ class CardGame extends Component {
     } = this.state;
     if (playerturn === "Player1") {
       if (e.target.dataset.hand === "player1") {
-        this.setState({
-          player1AttackingCard: parseInt(e.target.dataset.numval),
-          message: "Please choose an opponents card to attack",
-        });
-      }
-      if (player1AttackingCard) {
         this.setState(
           {
-            player2AttackedCard: parseInt(e.target.dataset.numval),
+            player1AttackingCard: parseInt(e.target.dataset.numval),
+            message: "Please choose an opponents card to attack",
+            attackingCardIndex: e.target.id,
           },
-          this.whoWon
+          this.onceP1AttackHappens
         );
       }
     }
+
     if (playerturn === "Player2") {
-      if (
-        e.target.dataset.hand === "player2" //&&
-        // player2hand[e.target.id].isFlipped === true
-      ) {
-        this.setState({
-          player2AttackingCard: parseInt(e.target.dataset.numval),
-          message: "Please choose an opponents card to attack",
-        });
-      }
-      if (player2AttackingCard) {
+      if (e.target.dataset.hand === "player2") {
         this.setState(
           {
-            player1AttackedCard: parseInt(e.target.dataset.numval),
+            player2AttackingCard: parseInt(e.target.dataset.numval),
+            attackingCardIndex: e.target.id,
+            message: "Please choose an opponents card to attack",
           },
-          this.whoWon
+          this.onceP2AttackHappens
         );
       }
     }
   };
 
-  whoWon = () => {
-    const {
-      player1AttackedCard,
-      player2AttackedCard,
-      player1AttackingCard,
-      player2AttackingCard,
-      message,
-    } = this.state;
-    if (player1AttackingCard > player2AttackedCard) {
+  onceP1AttackHappens = (e) => {
+    const { player1AttackingCard, player1hand, player2hand } = this.state;
+    if (player1AttackingCard) {
+      let p2AttackedCard = parseInt(e.target.dataset.numval);
+      let cardIndex = e.target.id;
       this.setState({
-        message: "Player 1 win this hand",
+        player2AttackedCard: p2AttackedCard,
+        attackedCardIndex: cardIndex,
       });
-    } else if (player2AttackingCard > player1AttackedCard) {
-      this.setState({
-        message: "Player 2 win this hand",
-      });
-    } else {
-      this.setState({
-        message: "This is a draw",
-      });
+      if (player1AttackingCard > p2AttackedCard) {
+        let newPlayer2Hand = [...player2hand];
+        newPlayer2Hand[cardIndex].hidden = true;
+        this.setState({
+          message: `Player 1 wins this hand`,
+          player2hand: newPlayer2Hand,
+        });
+      } else if (player1AttackingCard < p2AttackedCard) {
+        let newPlayer1Hand = [...player1hand];
+        newPlayer1Hand[cardIndex].hidden = true;
+        this.setState({
+          message: `Player 2 wins this hand`,
+          player1hand: newPlayer1Hand,
+        });
+      } else {
+        this.setState({
+          message: "This is a draw",
+        });
+      }
     }
   };
 
+  onceP2AttackHappens = (e) => {
+    const { player2AttackingCard, player2hand, player1hand } = this.state;
+    if (player2AttackingCard) {
+      let p1AttackedCard = parseInt(e.target.dataset.numval);
+      let cardIndex = e.target.id;
+      this.setState({
+        player1AttackedCard: p1AttackedCard,
+        attackedCardIndex: cardIndex,
+      });
+      if (player2AttackingCard > p1AttackedCard) {
+        let newPlayer1Hand = [...player1hand];
+        newPlayer1Hand[cardIndex].hidden = true;
+        this.setState({
+          message: `Player2 win this hand`,
+          player1hand: newPlayer1Hand,
+        });
+      } else if (player2AttackingCard < p1AttackedCard) {
+        let newPlayer2Hand = [...player2hand];
+        newPlayer2Hand[cardIndex].hidden = true;
+        this.setState({
+          message: `Player 1 win this hand`,
+          player2hand: newPlayer2Hand,
+        });
+      } else {
+        this.setState({
+          message: "This is a draw",
+        });
+      }
+    }
+  };
   flipCard = (e) => {
     let { player1hand, player2hand } = this.state;
     console.log("target: ", e.target.id);
