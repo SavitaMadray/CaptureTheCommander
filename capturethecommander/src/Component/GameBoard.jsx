@@ -17,11 +17,6 @@ export default function GameBoard(props) {
   let secondRowP2 = player2hand.slice(10, 12);
   let firstRowP2 = [player2hand[player2hand.length - 1]];
 
-  // let cardFormation = [firstRow, secondRow, thirdRow, fourthRow, fifthRow];
-  // console.log(player1hand);
-
-  // rule about what cards can be flipCard?
-
   return (
     <div className="board">
       <p className="firstMove">{message}</p>
@@ -34,14 +29,9 @@ export default function GameBoard(props) {
                 <Card
                   key={card.suit + card.num}
                   id={i}
-                  // isFlipped={card.isFlipped}
                   clicked={flipCard}
-                  // cardbackImg={card.backImg}
-                  // cardfrontImg={card.frontImg}
-                  // cardNum={card.num}
                   className="card1"
                   hand="player1"
-                  // numVal={card.numVal}
                   gameMoves={gameMoves}
                   card={card}
                 />
@@ -52,15 +42,10 @@ export default function GameBoard(props) {
                 return (
                   <Card
                     key={card.suit + card.num}
-                    id={i + 4}
-                    isFlipped={card.isFlipped}
+                    id={i}
                     clicked={flipCard}
-                    cardbackImg={card.backImg}
-                    cardfrontImg={card.frontImg}
-                    cardNum={card.num}
                     className="card1"
                     hand="player1"
-                    numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
                   />
@@ -72,15 +57,10 @@ export default function GameBoard(props) {
                 return (
                   <Card
                     key={card.suit + card.num}
-                    id={i + 7}
-                    isFlipped={card.isFlipped}
+                    id={i}
                     clicked={flipCard}
-                    cardbackImg={card.backImg}
-                    cardfrontImg={card.frontImg}
-                    cardNum={card.num}
                     className="card1"
                     hand="player1"
-                    numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
                   />
@@ -92,15 +72,10 @@ export default function GameBoard(props) {
                 return (
                   <Card
                     key={card.suit + card.num}
-                    id={i + 10}
-                    isFlipped={card.isFlipped}
+                    id={i}
                     clicked={flipCard}
-                    cardbackImg={card.backImg}
-                    cardfrontImg={card.frontImg}
-                    cardNum={card.num}
                     className="card1"
                     hand="player1"
-                    numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
                   />
@@ -112,15 +87,10 @@ export default function GameBoard(props) {
                 return (
                   <Card
                     key={card.suit + card.num}
-                    id={i + 12}
-                    isFlipped={card.isFlipped}
+                    id={i}
                     clicked={flipCard}
-                    cardbackImg={card.backImg}
-                    cardfrontImg={card.frontImg}
-                    cardNum={card.num}
                     className="card1"
                     hand="player1"
-                    numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
                   />
@@ -138,14 +108,9 @@ export default function GameBoard(props) {
                 <Card
                   key={card.suit + card.num}
                   id={i + 12}
-                  isFlipped={card.isFlipped}
                   clicked={flipCard}
-                  cardbackImg={card.backImg}
-                  cardfrontImg={card.frontImg}
-                  cardNum={card.num}
                   className="card2"
                   hand="player2"
-                  numVal={card.numVal}
                   gameMoves={gameMoves}
                   card={card}
                 />
@@ -156,15 +121,10 @@ export default function GameBoard(props) {
                 return (
                   <Card
                     key={card.suit + card.num}
-                    id={i + 10}
-                    isFlipped={card.isFlipped}
+                    id={i + 12}
                     clicked={flipCard}
-                    cardbackImg={card.backImg}
-                    cardfrontImg={card.frontImg}
-                    cardNum={card.num}
                     className="card2"
                     hand="player2"
-                    numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
                   />
@@ -176,15 +136,10 @@ export default function GameBoard(props) {
                 return (
                   <Card
                     key={card.suit + card.num}
-                    id={i + 7}
-                    isFlipped={card.isFlipped}
+                    id={i + 12}
                     clicked={flipCard}
-                    cardbackImg={card.backImg}
-                    cardfrontImg={card.frontImg}
-                    cardNum={card.num}
                     className="card2"
                     hand="player2"
-                    numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
                   />
@@ -196,15 +151,10 @@ export default function GameBoard(props) {
                 return (
                   <Card
                     key={card.suit + card.num}
-                    id={i + 4}
-                    isFlipped={card.isFlipped}
+                    id={i + 12}
                     clicked={flipCard}
-                    cardbackImg={card.backImg}
-                    cardfrontImg={card.frontImg}
-                    cardNum={card.num}
                     className="card2"
                     hand="player2"
-                    numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
                   />
@@ -216,15 +166,10 @@ export default function GameBoard(props) {
                 return (
                   <Card
                     key={card.suit + card.num}
-                    id={i}
-                    isFlipped={card.isFlipped}
+                    id={i + 12}
                     clicked={flipCard}
-                    cardbackImg={card.backImg}
-                    cardfrontImg={card.frontImg}
-                    cardNum={card.num}
                     className="card2"
                     hand="player2"
-                    numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
                   />
