@@ -28,20 +28,22 @@ export default function GameBoard(props) {
       <div className="players">
         <section className="hand1">
           <section className="row1">
+            <p className="player">Player 1</p>
             {firstRowP1.map((card, i) => {
               return (
                 <Card
                   key={card.suit + card.num}
                   id={i}
-                  isFlipped={card.isFlipped}
+                  // isFlipped={card.isFlipped}
                   clicked={flipCard}
-                  cardbackImg={card.backImg}
-                  cardfrontImg={card.frontImg}
-                  cardNum={card.num}
+                  // cardbackImg={card.backImg}
+                  // cardfrontImg={card.frontImg}
+                  // cardNum={card.num}
                   className="card1"
                   hand="player1"
+                  // numVal={card.numVal}
                   gameMoves={gameMoves}
-                  numVal={card.numVal}
+                  card={card}
                 />
               );
             })}
@@ -58,8 +60,9 @@ export default function GameBoard(props) {
                     cardNum={card.num}
                     className="card1"
                     hand="player1"
-                    gameMoves={gameMoves}
                     numVal={card.numVal}
+                    gameMoves={gameMoves}
+                    card={card}
                   />
                 );
               })}
@@ -77,8 +80,9 @@ export default function GameBoard(props) {
                     cardNum={card.num}
                     className="card1"
                     hand="player1"
-                    gameMoves={gameMoves}
                     numVal={card.numVal}
+                    gameMoves={gameMoves}
+                    card={card}
                   />
                 );
               })}
@@ -97,6 +101,8 @@ export default function GameBoard(props) {
                     className="card1"
                     hand="player1"
                     numVal={card.numVal}
+                    gameMoves={gameMoves}
+                    card={card}
                   />
                 );
               })}
@@ -114,8 +120,9 @@ export default function GameBoard(props) {
                     cardNum={card.num}
                     className="card1"
                     hand="player1"
-                    gameMoves={gameMoves}
                     numVal={card.numVal}
+                    gameMoves={gameMoves}
+                    card={card}
                   />
                 );
               })}
@@ -125,6 +132,7 @@ export default function GameBoard(props) {
 
         <section className="hand2">
           <section className="row1">
+            <p className="player">Player 2</p>
             {firstRowP2.map((card, i) => {
               return (
                 <Card
@@ -137,8 +145,9 @@ export default function GameBoard(props) {
                   cardNum={card.num}
                   className="card2"
                   hand="player2"
-                  gameMoves={gameMoves}
                   numVal={card.numVal}
+                  gameMoves={gameMoves}
+                  card={card}
                 />
               );
             })}
@@ -155,8 +164,9 @@ export default function GameBoard(props) {
                     cardNum={card.num}
                     className="card2"
                     hand="player2"
-                    gameMoves={gameMoves}
                     numVal={card.numVal}
+                    gameMoves={gameMoves}
+                    card={card}
                   />
                 );
               })}
@@ -174,8 +184,9 @@ export default function GameBoard(props) {
                     cardNum={card.num}
                     className="card2"
                     hand="player2"
-                    gameMoves={gameMoves}
                     numVal={card.numVal}
+                    gameMoves={gameMoves}
+                    card={card}
                   />
                 );
               })}
@@ -193,8 +204,9 @@ export default function GameBoard(props) {
                     cardNum={card.num}
                     className="card2"
                     hand="player2"
-                    gameMoves={gameMoves}
                     numVal={card.numVal}
+                    gameMoves={gameMoves}
+                    card={card}
                   />
                 );
               })}
@@ -212,8 +224,9 @@ export default function GameBoard(props) {
                     cardNum={card.num}
                     className="card2"
                     hand="player2"
-                    gameMoves={gameMoves}
                     numVal={card.numVal}
+                    gameMoves={gameMoves}
+                    card={card}
                   />
                 );
               })}

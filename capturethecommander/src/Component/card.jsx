@@ -1,54 +1,45 @@
 import React from "react";
 
 function Card(props) {
-  const {
-    isFlipped,
-    id,
-    cardbackImg,
-    cardfrontImg,
-    clicked,
-    hand,
-    gameMoves,
-    numVal,
-  } = props;
+  const { card, id, clicked, hand, gameMoves } = props;
 
-  if (isFlipped === false) {
+  let hiddenCard = "";
+  if (card.hidden) {
+    hiddenCard = "hidden";
+  }
+  if (card.isFlipped === false) {
     return (
       <img
         id={id}
-        src={cardbackImg}
+        src={card.backImg}
         alt="broken pic"
         onClick={(e) => {
-          clicked(e);
-          gameMoves(e);
+          if (!card.hidden) {
+            clicked(e);
+            gameMoves(e);
+          }
         }}
-        className="card"
+        className={"card" + " " + hiddenCard}
         data-hand={hand}
-        data-numval={numVal}
+        data-numval={card.numVal}
       />
     );
   } else {
     return (
       <img
         id={id}
-        src={cardfrontImg}
+        src={card.frontImg}
         alt="broken pic"
         onClick={(e) => {
-          clicked(e);
-          gameMoves(e);
+          if (!card.hidden) {
+            clicked(e);
+            gameMoves(e);
+          }
         }}
-        className="card"
+        className={"card" + " " + hiddenCard}
         data-hand={hand}
-        data-numval={numVal}
+        data-numval={card.numVal}
       />
-
-      // <p
-      // id = {props.id}
-      // onClick = {props.clicked}
-      // className = {props.classname}
-      // >
-      //     {props.cardSuit} {props.cardNum}
-      // </p>
     );
   }
 }
