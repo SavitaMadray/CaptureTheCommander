@@ -22,6 +22,7 @@ class CardGame extends Component {
       attackedCardIndex: null,
       pickWinner: false,
       message: "",
+      turnEnd: false,
     };
   }
 
@@ -125,48 +126,84 @@ class CardGame extends Component {
       pickWinner,
     } = this.state;
     if (player1AttackingCard && pickWinner) {
+      //if player1 is greater than player2 then player1 is flipped over and player2 is hidden
       if (player1AttackingCard > player2AttackedCard) {
         let newPlayer2Hand = [...player2hand];
+        let newPlayer1Hand = [...player1hand];
         newPlayer2Hand[attackedCardIndex].hidden = true;
+        newPlayer1Hand[attackingCardIndex].isFlipped = false;
         setTimeout(() => {
           this.setState({
             message: `Player 1 wins this hand`,
             player2hand: newPlayer2Hand,
+            player1hand: newPlayer1Hand,
+            turnEnd: true,
           });
-        }, 4190);
+        }, 2000);
+        //player 1 loses (hidden).  player 2 wins(flipped)
       } else if (player1AttackingCard < player2AttackedCard) {
         let newPlayer1Hand = [...player1hand];
+        let newPlayer2Hand = [...player2hand];
         newPlayer1Hand[attackingCardIndex].hidden = true;
+        newPlayer2Hand[attackedCardIndex].isFlipped = false;
         setTimeout(() => {
           this.setState({
             message: `Player 2 wins this hand`,
             player1hand: newPlayer1Hand,
+            player2hand: newPlayer2Hand,
+            turnEnd: true,
           });
-        }, 4190);
+        }, 2000);
       } else {
+        let newPlayer1Hand = [...player1hand];
+        let newPlayer2Hand = [...player2hand];
+        newPlayer1Hand[attackingCardIndex].isFlipped = false;
+        newPlayer2Hand[attackingCardIndex].isFlipped = false;
         this.setState({
           message: "This is a draw",
+          player1hand: newPlayer1Hand,
+          player2hand: newPlayer2Hand,
+          turnEnd: true,
         });
       }
     }
     if (player2AttackingCard && pickWinner) {
+      //player 2 wins(flipped).  player 1 loses(hides)
       if (player2AttackingCard > player1AttackedCard) {
         let newPlayer1Hand = [...player1hand];
+        let newPlayer2Hand = [...player2hand];
+        newPlayer2Hand[attackingCardIndex].isFlipped = false;
         newPlayer1Hand[attackedCardIndex].hidden = true;
-        this.setState({
-          message: `Player 2 wins this hand`,
-          player1hand: newPlayer1Hand,
-        });
+        setTimeout(() => {
+          this.setState({
+            message: `Player 2 wins this hand`,
+            player1hand: newPlayer1Hand,
+            player2hand: newPlayer2Hand,
+            turnEnd: true,
+          });
+        }, 2000);
+        //player 2 loses(hides). player1 wins(flipped)
       } else if (player2AttackingCard < player1AttackedCard) {
         let newPlayer2Hand = [...player2hand];
+        let newPlayer1Hand = [...player1hand];
         newPlayer2Hand[attackingCardIndex].hidden = true;
-        this.setState({
-          message: `Player 1 wins this hand`,
-          player2hand: newPlayer2Hand,
-        });
+        newPlayer1Hand[attackedCardIndex].isFlipped = false;
+        setTimeout(() => {
+          this.setState({
+            message: `Player 1 wins this hand`,
+            player2hand: newPlayer2Hand,
+            player1hand: newPlayer1Hand,
+          });
+        }, 2000);
       } else {
+        let newPlayer1Hand = [...player1hand];
+        newPlayer1Hand[attackingCardIndex].isFlipped = false;
+        let newPlayer2Hand = [...player2hand];
+        newPlayer2Hand[attackingCardIndex].isFlipped = false;
         this.setState({
           message: "This is a draw",
+          player1hand: newPlayer1Hand,
+          player2hand: newPlayer2Hand,
         });
       }
     }
