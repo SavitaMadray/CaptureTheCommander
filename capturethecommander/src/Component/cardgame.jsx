@@ -85,8 +85,6 @@ class CardGame extends Component {
 
   chooseOpponent = (e) => {
     const { player1AttackingCard, player2AttackingCard } = this.state;
-    console.log("plyer1attcrd", player1AttackingCard);
-    console.log("plyer2attcrd", player2AttackingCard);
 
     if (player1AttackingCard) {
       let opponentCard = parseInt(e.target.dataset.numval);
@@ -125,13 +123,19 @@ class CardGame extends Component {
       attackedCardIndex,
       pickWinner,
     } = this.state;
+
+    if (attackedCardIndex === "12") {
+      this.setState({
+        message: "You lost",
+      });
+    }
     if (player1AttackingCard && pickWinner) {
-      //if player1 is greater than player2 then player1 is flipped over and player2 is hidden
       if (player1AttackingCard > player2AttackedCard) {
         let newPlayer2Hand = [...player2hand];
         let newPlayer1Hand = [...player1hand];
         newPlayer2Hand[attackedCardIndex].hidden = true;
         newPlayer1Hand[attackingCardIndex].isFlipped = false;
+        console.log(attackedCardIndex);
         setTimeout(() => {
           this.setState(
             {
@@ -143,7 +147,6 @@ class CardGame extends Component {
             this.endTurn
           );
         }, 2000);
-        //player 1 loses (hidden).  player 2 wins(flipped)
       } else if (player1AttackingCard < player2AttackedCard) {
         let newPlayer1Hand = [...player1hand];
         let newPlayer2Hand = [...player2hand];
@@ -177,7 +180,6 @@ class CardGame extends Component {
       }
     }
     if (player2AttackingCard && pickWinner) {
-      //player 2 wins(flipped).  player 1 loses(hides)
       if (player2AttackingCard > player1AttackedCard) {
         let newPlayer1Hand = [...player1hand];
         let newPlayer2Hand = [...player2hand];
@@ -241,6 +243,7 @@ class CardGame extends Component {
         attackingCardIndex: null,
         attackedCardIndex: null,
         message: "Player2 turn",
+        turnEnd: false,
       });
     }
     if (turnEnd && playerturn === "Player2") {
@@ -253,6 +256,7 @@ class CardGame extends Component {
         attackingCardIndex: null,
         attackedCardIndex: null,
         message: "Player1 Turn",
+        turnEnd: false,
       });
     }
   };

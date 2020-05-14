@@ -303,7 +303,7 @@ let deck = [
     cardNum: 26,
     suit: "♢",
     num: "A",
-    numVal: 10,
+    numVal: 14,
     backImg:
       "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
     frontImg:
@@ -459,7 +459,7 @@ let deck = [
     cardNum: 39,
     suit: "♡",
     num: "A",
-    numVal: 10,
+    numVal: 14,
     backImg:
       "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
     frontImg:
