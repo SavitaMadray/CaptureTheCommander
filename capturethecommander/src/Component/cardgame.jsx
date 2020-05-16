@@ -23,6 +23,9 @@ class CardGame extends Component {
       pickWinner: false,
       message: "",
       turnEnd: false,
+      turnWinner: "",
+      turn1: false,
+      turn2: false,
     };
   }
 
@@ -47,12 +50,14 @@ class CardGame extends Component {
         player1Active: true,
         message: "Player 1. Pick a card.",
         playerturn: "Player1",
+        turn1: true,
       });
     } else {
       this.setState({
         player2Active: true,
         message: "Player 2. Pick a card.",
         playerturn: "Player2",
+        turn2: true,
       });
     }
   };
@@ -70,6 +75,8 @@ class CardGame extends Component {
           player1AttackingCard: parseInt(e.target.dataset.numval),
           message: "Please choose an opponents card to attack",
           attackingCardIndex: e.target.id,
+          turn1: true,
+          turn2: false,
         });
       }
     } else if (playerturn === "Player2") {
@@ -78,6 +85,8 @@ class CardGame extends Component {
           player2AttackingCard: parseInt(e.target.dataset.numval),
           attackingCardIndex: e.target.id,
           message: "Please choose an opponents card to attack",
+          turn2: true,
+          turn1: false,
         });
       }
     }
@@ -85,8 +94,6 @@ class CardGame extends Component {
 
   chooseOpponent = (e) => {
     const { player1AttackingCard, player2AttackingCard } = this.state;
-    console.log("plyer1attcrd", player1AttackingCard);
-    console.log("plyer2attcrd", player2AttackingCard);
 
     if (player1AttackingCard) {
       let opponentCard = parseInt(e.target.dataset.numval);
@@ -96,6 +103,8 @@ class CardGame extends Component {
           player2AttackedCard: opponentCard,
           attackedCardIndex: opponentCardIndex,
           pickWinner: true,
+          turn1: false,
+          turn2: true,
         },
         this.whoWon
       );
@@ -107,6 +116,8 @@ class CardGame extends Component {
           player1AttackedCard: opponentCard,
           attackedCardIndex: opponentCardIndex,
           pickWinner: true,
+          turn1: true,
+          turn2: false,
         },
         this.whoWon
       );
@@ -125,13 +136,24 @@ class CardGame extends Component {
       attackedCardIndex,
       pickWinner,
     } = this.state;
+
+    // if (attackedCardIndex === "12") {
+    //   this.setState({
+    //     message: "You lost",
+    //   });
+    // }
+    let newPlayer1Hand = [...player1hand];
+    let newPlayer2Hand = [...player2hand];
+
     if (player1AttackingCard && pickWinner) {
-      //if player1 is greater than player2 then player1 is flipped over and player2 is hidden
-      if (player1AttackingCard > player2AttackedCard) {
-        let newPlayer2Hand = [...player2hand];
-        let newPlayer1Hand = [...player1hand];
+      if (attackedCardIndex === "12") {
+        this.setState({
+          message: "Player 2 lost",
+        });
+      } else if (player1AttackingCard > player2AttackedCard) {
         newPlayer2Hand[attackedCardIndex].hidden = true;
         newPlayer1Hand[attackingCardIndex].isFlipped = false;
+        console.log(attackedCardIndex);
         setTimeout(() => {
           this.setState(
             {
@@ -139,14 +161,12 @@ class CardGame extends Component {
               player2hand: newPlayer2Hand,
               player1hand: newPlayer1Hand,
               turnEnd: true,
+              turnWinner: "Player 1",
             },
             this.endTurn
           );
         }, 2000);
-        //player 1 loses (hidden).  player 2 wins(flipped)
       } else if (player1AttackingCard < player2AttackedCard) {
-        let newPlayer1Hand = [...player1hand];
-        let newPlayer2Hand = [...player2hand];
         newPlayer1Hand[attackingCardIndex].hidden = true;
         newPlayer2Hand[attackedCardIndex].isFlipped = false;
         setTimeout(() => {
@@ -156,31 +176,34 @@ class CardGame extends Component {
               player1hand: newPlayer1Hand,
               player2hand: newPlayer2Hand,
               turnEnd: true,
+              turnWinner: "Player 2",
             },
             this.endTurn
           );
         }, 2000);
       } else {
-        let newPlayer1Hand = [...player1hand];
-        let newPlayer2Hand = [...player2hand];
         newPlayer1Hand[attackingCardIndex].isFlipped = false;
-        newPlayer2Hand[attackingCardIndex].isFlipped = false;
-        this.setState(
-          {
-            message: "This is a draw",
-            player1hand: newPlayer1Hand,
-            player2hand: newPlayer2Hand,
-            turnEnd: true,
-          },
-          this.endTurn
-        );
+        newPlayer2Hand[attackedCardIndex].isFlipped = false;
+        setTimeout(() => {
+          this.setState(
+            {
+              message: "This is a draw",
+              player1hand: newPlayer1Hand,
+              player2hand: newPlayer2Hand,
+              turnEnd: true,
+              turnWinner: "",
+            },
+            this.endTurn
+          );
+        }, 2000);
       }
     }
     if (player2AttackingCard && pickWinner) {
-      //player 2 wins(flipped).  player 1 loses(hides)
-      if (player2AttackingCard > player1AttackedCard) {
-        let newPlayer1Hand = [...player1hand];
-        let newPlayer2Hand = [...player2hand];
+      if (attackedCardIndex === "12") {
+        this.setState({
+          message: "Player 1 lost",
+        });
+      } else if (player2AttackingCard > player1AttackedCard) {
         newPlayer2Hand[attackingCardIndex].isFlipped = false;
         newPlayer1Hand[attackedCardIndex].hidden = true;
         setTimeout(() => {
@@ -190,14 +213,12 @@ class CardGame extends Component {
               player1hand: newPlayer1Hand,
               player2hand: newPlayer2Hand,
               turnEnd: true,
+              turnWinner: "Player 2",
             },
             this.endTurn
           );
         }, 2000);
-        //player 2 loses(hides). player1 wins(flipped)
       } else if (player2AttackingCard < player1AttackedCard) {
-        let newPlayer2Hand = [...player2hand];
-        let newPlayer1Hand = [...player1hand];
         newPlayer2Hand[attackingCardIndex].hidden = true;
         newPlayer1Hand[attackedCardIndex].isFlipped = false;
         setTimeout(() => {
@@ -207,24 +228,26 @@ class CardGame extends Component {
               player2hand: newPlayer2Hand,
               player1hand: newPlayer1Hand,
               turnEnd: true,
+              turnWinner: "Player 1",
             },
             this.endTurn
           );
         }, 2000);
       } else {
-        let newPlayer1Hand = [...player1hand];
-        newPlayer1Hand[attackingCardIndex].isFlipped = false;
-        let newPlayer2Hand = [...player2hand];
+        newPlayer1Hand[attackedCardIndex].isFlipped = false;
         newPlayer2Hand[attackingCardIndex].isFlipped = false;
-        this.setState(
-          {
-            message: "This is a draw",
-            player1hand: newPlayer1Hand,
-            player2hand: newPlayer2Hand,
-            turnEnd: true,
-          },
-          this.endTurn
-        );
+        setTimeout(() => {
+          this.setState(
+            {
+              message: "This is a draw",
+              player1hand: newPlayer1Hand,
+              player2hand: newPlayer2Hand,
+              turnEnd: true,
+              turnWinner: "",
+            },
+            this.endTurn
+          );
+        }, 2000);
       }
     }
   };
@@ -241,6 +264,7 @@ class CardGame extends Component {
         attackingCardIndex: null,
         attackedCardIndex: null,
         message: "Player2 turn",
+        turnEnd: false,
       });
     }
     if (turnEnd && playerturn === "Player2") {
@@ -253,12 +277,13 @@ class CardGame extends Component {
         attackingCardIndex: null,
         attackedCardIndex: null,
         message: "Player1 Turn",
+        turnEnd: false,
       });
     }
   };
 
   flipCard = (e) => {
-    let { player1hand, player2hand } = this.state;
+    let { player1hand, player2hand, turn1, turn2 } = this.state;
     console.log("target: ", e.target.id);
 
     if (e.target.dataset.hand === "player1") {
@@ -286,9 +311,7 @@ class CardGame extends Component {
     }
   };
 
-  componentDidUpdate() {
-    console.log(this.state);
-  }
+  componentDidUpdate() {}
 
   render() {
     const {
