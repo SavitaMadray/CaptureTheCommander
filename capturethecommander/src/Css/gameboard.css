@@ -4,10 +4,8 @@
   font-family: "Fontdiner Swanky", cursive;
 }
 
-
-
-
 .card {
+  cursor: pointer;
   align-items: center;
   justify-self: center;
   width: 79px;
@@ -18,8 +16,13 @@
   margin: 1px;
   box-shadow: 7px 10px 12px -5px rgba(8, 8, 8, 0.66);
   margin-left: 15px;
+  transition: all 0.2s ease-out;
 }
 
+.card:hover {
+  transform: scale(1.12);
+  opacity: 0.98;
+}
 .hidden {
   opacity: 0%;
 }
@@ -43,7 +46,7 @@ h1 {
   /* size: 100%; */
 }
 
-.players{
+.players {
   display: grid;
   grid-template-columns: 50% 50%;
 }

@@ -147,9 +147,11 @@ class CardGame extends Component {
 
     if (player1AttackingCard && pickWinner) {
       if (attackedCardIndex === "12") {
-        this.setState({
-          message: "Player 2 lost",
-        });
+        setTimeout(() => {
+          this.setState({
+            message: "Player 2 lost",
+          });
+        }, 1000);
       } else if (player1AttackingCard > player2AttackedCard) {
         newPlayer2Hand[attackedCardIndex].hidden = true;
         newPlayer1Hand[attackingCardIndex].isFlipped = false;
