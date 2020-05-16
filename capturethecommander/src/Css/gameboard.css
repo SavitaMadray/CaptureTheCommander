@@ -1,23 +1,12 @@
 .board {
   background-color: rgba(1, 53, 1, 0.824);
   justify-content: center;
-  height: 100vh;
   font-family: "Fontdiner Swanky", cursive;
 }
 
-.players {
-  /* transform: rotate(90deg); */
-  margin: 0px;
-  padding-top: 0px;
-  display: flex;
-}
 
-.hand1,
-.hand2 {
-  padding-top: 10px;
-  margin-left: 120px;
-  margin-right: 120px;
-}
+
+
 .card {
   align-items: center;
   justify-self: center;
@@ -51,4 +40,10 @@ h1 {
 .player {
   margin: 0px;
   color: white;
+  /* size: 100%; */
+}
+
+.players{
+  display: grid;
+  grid-template-columns: 50% 50%;
 }

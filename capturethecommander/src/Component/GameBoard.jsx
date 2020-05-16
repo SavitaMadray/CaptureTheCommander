@@ -20,7 +20,9 @@ export default function GameBoard(props) {
   return (
     <div className="board">
       <p className="firstMove">{message}</p>
+      
       <div className="players">
+       {/* beginning of section */}
         <section className="hand1">
           <section className="row1">
             <p className="player">Player 1</p>
@@ -124,7 +126,7 @@ export default function GameBoard(props) {
             </section>
           </section>
         </section>
-
+        {/*end of section  */}
         <section className="hand2">
           <section className="row1">
             <p className="player">Player 2</p>
