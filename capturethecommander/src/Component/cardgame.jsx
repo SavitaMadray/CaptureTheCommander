@@ -44,7 +44,7 @@ class CardGame extends Component {
   };
 
   coinFlip = () => {
-    let coin = Math.floor(Math.random() * 2);
+    let coin = 0//Math.floor(Math.random() * 2);
     if (coin % 2 === 0) {
       this.setState({
         player1Active: true,
@@ -63,34 +63,69 @@ class CardGame extends Component {
   };
 
   gameMoves = (e) => {
-    this.chooseAttacker(e);
+    const { playerturn, player1AttackingCard, player2AttackedCard } = this.state;
+    let { hand } = e.target.dataset
+
+    if (playerturn === "Player1") {
+      // if i'm clicking my hand and I don't have a card to attack with
+      if (hand === "player1" && player1AttackingCard === null){
+        this.chooseAttacker2(e);
+      }
+      //if i'm attacking the other players hand and I have a card to attack with
+      if(hand === "player2" && player2AttackedCard ){
+        
+      }
+
+    }
+
+    if (playerturn === "Player1" && hand === "player2" && player2AttackedCard === null) {
+      this.chooseOpponent(e);
+    }
+
+
+    if (playerturn === "Player2") {
+      if (e.target.dataset.hand === "player2") {
+        this.chooseAttacker2(e);
+      }
+    }
+
+
+
+
+
+    // this.chooseAttacker(e);
     this.chooseOpponent(e);
   };
 
+
+  chooseAttacker2 = (e, playerTurn) => {
+    // message
+    const message = "Please choose an opponents card to attack"
+    // Last digit of player. Either 1 or 2.
+    const playerDigit = e.target.dataset.hand[e.target.dataset.hand.length - 1];
+    // Set the hand
+    let attackHand = `player${playerDigit}AttackingCard`;
+    this.setState({
+      [attackHand]: parseInt(e.target.dataset.numval),
+      message,
+      attackingCardIndex: e.target.id,
+      turn1: playerDigit === "1",
+      turn2: !playerDigit === "1"
+    })
+  }
+
   chooseAttacker = (e) => {
-    const { playerturn } = this.state;
-    if (playerturn === "Player1") {
-      if (e.target.dataset.hand === "player1") {
-        this.setState({
-          player1AttackingCard: parseInt(e.target.dataset.numval),
-          message: "Please choose an opponents card to attack",
-          attackingCardIndex: e.target.id,
-          turn1: true,
-          turn2: false,
-        });
-      }
-    } else if (playerturn === "Player2") {
-      if (e.target.dataset.hand === "player2") {
-        this.setState({
-          player2AttackingCard: parseInt(e.target.dataset.numval),
-          attackingCardIndex: e.target.id,
-          message: "Please choose an opponents card to attack",
-          turn2: true,
-          turn1: false,
-        });
-      }
-    }
+    //What is it that I want to do?
+    /*
+      1. Check to see who's turn it is.
+      2. Then use the same value to check which hand i'm choosing from.
+      3. Asign card based on player hand and turn.
+    */
+
+
   };
+
+
 
   chooseOpponent = (e) => {
     const { player1AttackingCard, player2AttackingCard } = this.state;
@@ -311,7 +346,7 @@ class CardGame extends Component {
     }
   };
 
-  componentDidUpdate() {}
+  componentDidUpdate() { }
 
   render() {
     const {

@@ -16,6 +16,8 @@ export default function GameBoard(props) {
   let thirdRowP2 = player2hand.slice(7, 10);
   let secondRowP2 = player2hand.slice(10, 12);
   let firstRowP2 = [player2hand[player2hand.length - 1]];
+  const p1 = "player1";
+  const p2 = "Player2"
 
   return (
     <div className="board">
@@ -37,7 +39,7 @@ export default function GameBoard(props) {
                   cardfrontImg={card.frontImg}
                   cardNum={card.num}
                   className="card1"
-                  hand="player1"
+                  hand={p1}
                   numVal={card.numVal}
                   gameMoves={gameMoves}
                   card={card}
@@ -56,7 +58,7 @@ export default function GameBoard(props) {
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
                     className="card1"
-                    hand="player1"
+                    hand={p1}
                     numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
@@ -76,7 +78,7 @@ export default function GameBoard(props) {
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
                     className="card1"
-                    hand="player1"
+                    hand={p1}
                     numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
@@ -96,7 +98,7 @@ export default function GameBoard(props) {
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
                     className="card1"
-                    hand="player1"
+                    hand={p1}
                     numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
@@ -116,7 +118,7 @@ export default function GameBoard(props) {
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
                     className="card1"
-                    hand="player1"
+                    hand={p1}
                     numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
@@ -141,7 +143,7 @@ export default function GameBoard(props) {
                   cardfrontImg={card.frontImg}
                   cardNum={card.num}
                   className="card2"
-                  hand="player2"
+                  hand={p2}
                   numVal={card.numVal}
                   gameMoves={gameMoves}
                   card={card}
@@ -160,7 +162,7 @@ export default function GameBoard(props) {
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
                     className="card2"
-                    hand="player2"
+                    hand={p2}
                     numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
@@ -180,7 +182,7 @@ export default function GameBoard(props) {
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
                     className="card2"
-                    hand="player2"
+                    hand={p2}
                     numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
@@ -200,7 +202,7 @@ export default function GameBoard(props) {
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
                     className="card2"
-                    hand="player2"
+                    hand={p2}
                     numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
@@ -220,7 +222,7 @@ export default function GameBoard(props) {
                     cardfrontImg={card.frontImg}
                     cardNum={card.num}
                     className="card2"
-                    hand="player2"
+                    hand={p2}
                     numVal={card.numVal}
                     gameMoves={gameMoves}
                     card={card}
