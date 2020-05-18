@@ -73,7 +73,7 @@ class CardGame extends Component {
       }
       //if i'm attacking the other players hand and I have a card to attack with
       if(hand === "player2" && player2AttackedCard ){
-        
+
       }
 
     }
@@ -124,6 +124,10 @@ class CardGame extends Component {
 
 
   };
+
+  chooseOpponent2 = (e) => {
+    
+  }
 
 
 
