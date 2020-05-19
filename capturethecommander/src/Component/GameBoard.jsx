@@ -17,7 +17,7 @@ export default function GameBoard(props) {
   let secondRowP2 = player2hand.slice(10, 12);
   let firstRowP2 = [player2hand[player2hand.length - 1]];
   const p1 = "player1";
-  const p2 = "Player2"
+  const p2 = "player2"
 
   return (
     <div className="board">
