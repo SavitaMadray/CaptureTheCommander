@@ -92,6 +92,26 @@ class CardGame extends Component {
     }
   };
 
+  allowedAttack = (opponentCardIndex) => {
+    const defenders = {
+      "0": [],
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [0, 1],
+      "5": [1, 2],
+      "6": [2, 3],
+      "7": [4],
+      "8": [5],
+      "9": [6],
+      "10": [7, 8],
+      "11": [8, 9],
+      "12": [10, 11],
+    };
+    if (opponentCardIndex === "4") {
+    }
+  };
+
   chooseOpponent = (e) => {
     const { player1AttackingCard, player2AttackingCard } = this.state;
 
@@ -313,7 +333,9 @@ class CardGame extends Component {
     }
   };
 
-  componentDidUpdate() {}
+  componentDidUpdate() {
+    console.log(this.state);
+  }
 
   render() {
     const {
