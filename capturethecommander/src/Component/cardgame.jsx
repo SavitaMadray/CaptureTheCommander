@@ -109,7 +109,7 @@ class CardGame extends Component {
   
   
   //old flip card
-  flipCard = (e,id,playerHand) => {
+  flipCard = (e) => {
     let { player1hand, player2hand} = this.state;
     console.log("target: ", e.target.id);
 
@@ -253,7 +253,9 @@ class CardGame extends Component {
         },
         this.whoWon
       );
-    } else if (player2AttackingCard) {
+    }  
+    
+    if (player2AttackingCard) {
       let opponentCard = parseInt(e.target.dataset.numval);
       let opponentCardIndex = e.target.id;
       this.setState(
@@ -282,15 +284,12 @@ class CardGame extends Component {
       pickWinner,
     } = this.state;
 
-    // if (attackedCardIndex === "12") {
-    //   this.setState({
-    //     message: "You lost",
-    //   });
-    // }
+    
     let newPlayer1Hand = [...player1hand];
     let newPlayer2Hand = [...player2hand];
 
     if (player1AttackingCard && pickWinner) {
+      
       if (attackedCardIndex === "12") {
         this.setState({
           message: "Player 2 lost",
