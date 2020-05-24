@@ -1,23 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../Css/nav.css";
 
 function Nav() {
   return (
     <div className="Nav">
-      <img
-        className="navImg"
-        src="https://cdn.pixabay.com/photo/2016/03/31/20/12/a-1295593_1280.png"
-      ></img>
       <section className="navSection">
-        <Link className="link" to="/">
-          Home
-        </Link>{" "}
         <img
           className="navImg"
           src="https://cdn.pixabay.com/photo/2016/03/31/20/12/a-1295593_1280.png"
-        ></img>
+          alt="broken pic"
+        />
+        <Link className="link" to="/">
+          Home
+        </Link>
       </section>
+
+      <img
+        className="navImg"
+        src="https://cdn.pixabay.com/photo/2016/03/31/20/12/a-1295593_1280.png"
+        alt="broken pic" />
     </div>
   );
 }

@@ -67,11 +67,14 @@ class CardGame extends Component {
     }
   };
 
-  gameMoves = (e) => {
-    const { playerturn, player1AttackingCard, player2AttackingCard } = this.state;
+  gameMoves = (e,id,playerHand) => {
+    const { playerturn, player1AttackingCard, player2AttackingCard,player1hand } = this.state;
     let { hand } = e.target.dataset
-
+    console.log(`game moves function id ${id} and playerhand ${playerHand}`)
+    console.log(`test`, this.allowMyFlip(id,player1hand))
+    
     if (playerturn === "Player1") {
+      
       // if i'm clicking my hand and I don't have a card to attack with
       if (hand === "player1" && player1AttackingCard === null){
         this.chooseAttacker2(e);
@@ -116,7 +119,7 @@ class CardGame extends Component {
   // }
   
   //old flip card
-  flipCard = (e) => {
+  flipCard = (e,id,playerHand) => {
     let { player1hand, player2hand} = this.state;
     console.log("target: ", e.target.id);
 
@@ -146,6 +149,41 @@ class CardGame extends Component {
       });
     }
   };
+
+  allowMyFlip = (id,playerHand) =>{
+    
+   let defenders = {
+      0: [],
+      1: [],
+      2: [],
+      3: [],
+      4: [0, 1],
+      5: [1, 2],
+      6: [2, 3],
+      7: [4],
+      8: [5],
+      9: [6],
+      10: [7, 8],
+      11: [8, 9],
+      12: [10, 11]
+    }
+    if (id < 4){
+      return true;
+    }
+
+    if (id >6 && id < 10){
+      return playerHand[defenders[id][0]].hidden 
+    }else{
+      console.log(defenders[id])
+     return defenders[id].every(el =>{
+        console.log(playerHand[el])
+        return playerHand[el].hidden
+      })
+    }
+    
+  }
+  
+
   
   chooseAttacker2 = (e) => {
     // message
