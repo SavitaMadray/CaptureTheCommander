@@ -232,6 +232,8 @@ class CardGame extends Component {
 
   };
 
+
+ 
   chooseOpponent2 = (e) => {
     //Last digit of player. Either 1 or 2
     const playerDigit = e.target.dataset.hand[e.target.dataset.hand.length -1];
@@ -307,9 +309,11 @@ class CardGame extends Component {
 
     if (player1AttackingCard && pickWinner) {
       if (attackedCardIndex === "12") {
-        this.setState({
-          message: "Player 2 lost",
-        });
+        setTimeout(() => {
+          this.setState({
+            message: "Player 2 lost",
+          });
+        }, 1000);
       } else if (player1AttackingCard > player2AttackedCard) {
         newPlayer2Hand[attackedCardIndex].hidden = true;
         newPlayer1Hand[attackingCardIndex].isFlipped = false;
@@ -441,6 +445,39 @@ class CardGame extends Component {
       });
     }
   };
+
+  flipCard = (e) => {
+    let { player1hand, player2hand, turn1, turn2 } = this.state;
+    console.log("target: ", e.target.id);
+
+    if (e.target.dataset.hand === "player1") {
+      if (player1hand[e.target.id].isFlipped === false) {
+        player1hand[e.target.id].isFlipped = true;
+      } else {
+        player1hand[e.target.id].isFlipped = false;
+      }
+
+      this.setState({
+        player1hand: player1hand,
+      });
+    }
+    if (e.target.dataset.hand === "player2") {
+      if (player2hand[e.target.id].isFlipped === false) {
+        player2hand[e.target.id].isFlipped = true;
+        console.log("false", player2hand[e.target.id]);
+      } else {
+        player2hand[e.target.id].isFlipped = false;
+      }
+
+      this.setState({
+        player2hand: player2hand,
+      });
+    }
+  };
+
+  componentDidUpdate() {
+    console.log(this.state);
+  }
 
 
   render() {
