@@ -15,8 +15,8 @@ function Card(props) {
         alt="broken pic"
         onClick={(e) => {
           if (!card.hidden) {
-            clicked(e);
-            gameMoves(e);
+            // clicked(e);
+            gameMoves(e,id,hand);
           }
         }}
         className={"card" + " " + hiddenCard}
@@ -32,7 +32,7 @@ function Card(props) {
         alt="broken pic"
         onClick={(e) => {
           if (!card.hidden) {
-            clicked(e);
+            // clicked(e);
             gameMoves(e);
           }
         }}
