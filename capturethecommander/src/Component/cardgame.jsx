@@ -221,7 +221,6 @@ class CardGame extends Component {
     //    }
   };
 
-<<<<<<< HEAD
   allowedAttack = (opponentCardIndex) => {
     const defenders = {
       "0": [],
@@ -258,29 +257,6 @@ class CardGame extends Component {
       this.whoWon
     );
   };
-=======
-
- 
-  chooseOpponent2 = (e) => {
-    //Last digit of player. Either 1 or 2
-    const playerDigit = e.target.dataset.hand[e.target.dataset.hand.length -1];
-    //Set the Hand
-    let attackedHand = `player${playerDigit}AttackedCard`;
-    this.flipCard(e)
-    this.setState({
-      [attackedHand]: e.target.dataset.numval,
-      attackedCardIndex: e.target.id,
-      pickWinner: true,
-      turn1: playerDigit === "1",
-      turn2: !playerDigit === "1",
-    }, this.whoWon)
-
-
-    
-  }
-
-
->>>>>>> d53eb1f00848c26ff30dabde93d6360fdfbfeb58
 
   chooseOpponent = (e) => {
     const { player1AttackingCard, player2AttackingCard } = this.state;
@@ -506,10 +482,6 @@ class CardGame extends Component {
   componentDidUpdate() {
     console.log(this.state);
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> d53eb1f00848c26ff30dabde93d6360fdfbfeb58
 
   render() {
     const {
