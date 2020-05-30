@@ -18,7 +18,17 @@ const comparePasswords = async (candidatePassword, passwordDigest) => {
   }
 };
 
+const loginRequired = (req, res, next) => {
+  if (req.user) return next();
+  res.status(401).json({
+    payload: null,
+    msg: "you are not logged in",
+    err: true,
+  });
+};
+
 module.exports = {
   hashPassword,
   comparePasswords,
+  loginRequired,
 };

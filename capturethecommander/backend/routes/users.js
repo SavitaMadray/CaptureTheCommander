@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const userQueries = require("../db/queries/users");
+const { loginRequired } = require("../auth/helpers");
 
 /* GET users listing. */
-router.get("/", async (req, res, next) => {
+router.get("/", loginRequired, async (req, res, next) => {
   console.log(req.session);
 
   try {
