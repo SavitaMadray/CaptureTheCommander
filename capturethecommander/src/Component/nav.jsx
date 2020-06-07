@@ -22,7 +22,7 @@ const Nav = ({ logOutUser, isUserLoggedIn }) => {
           src="https://cdn.pixabay.com/photo/2016/03/31/20/12/a-1295593_1280.png"
           alt="broken pic"
         />
-        <Link to="/Login">LogIn</Link> <Link to="/SignUp">SignUp</Link>{" "}
+        <Link to="/login">LogIn</Link> <Link to="/signup">SignUp</Link>{" "}
       </section>
 
       <img
