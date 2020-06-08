@@ -202,7 +202,7 @@ class CardGame extends Component {
       3. Asign card based on player hand and turn.
     */
 
-    //  const { playerturn } = this.state;
+     const { playerturn } = this.state;
     //  if (playerturn === "Player1") {
     //    if (e.target.dataset.hand === "player1") {
     //      this.setState({
