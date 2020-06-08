@@ -32,33 +32,7 @@ class CardGame extends Component {
   componentDidMount() {
     this.handleStart();
   }
-
-  winningCondition = () => {
-    /* 
-    Things we need to know  
-      1. Index of commander
-      2. Check if commander is hidden
-      3. Check the hand
-      4. Losing Hand 
-      Check the index of the last hand and see which is hidden
-    */
-    let { player1hand, player2hand } = this.state;
-    let commander1Index = player1hand.length - 1;
-    let commander2Index = player2hand.length - 1;
-    let isCommanderOneHidden = player1hand[commander1Index].hidden;
-    let isCommanderTwoHidden = player2hand[commander2Index].hidden;
-
-    if (isCommanderOneHidden) {
-      window.alert("Player 2 Won!")
-    } else if (isCommanderTwoHidden) {
-      window.alert("Player 1 Won!")
-    }
-
-
-
-  }
-
-
+  
   // componentDidUpdate(){
   //   let {player1AttackingCard} = this.state;
   //   console.log(player1AttackingCard)
@@ -316,11 +290,7 @@ class CardGame extends Component {
 
     if (player1AttackingCard && pickWinner) {
 
-      if (attackedCardIndex === "12") {
-        this.setState({
-          message: "Player 2 lost",
-        });
-      } else if (player1AttackingCard > player2AttackedCard) {
+      if (player1AttackingCard > player2AttackedCard) {
         newPlayer2Hand[attackedCardIndex].hidden = true;
         newPlayer1Hand[attackingCardIndex].isFlipped = false;
         console.log(attackedCardIndex);
@@ -352,8 +322,8 @@ class CardGame extends Component {
           );
         }, 2000);
       } else {
-        newPlayer1Hand[attackingCardIndex].isFlipped = false;
-        newPlayer2Hand[attackedCardIndex].isFlipped = false;
+        newPlayer1Hand[attackingCardIndex].hidden = true;
+        newPlayer2Hand[attackedCardIndex].hidden = true;
         setTimeout(() => {
           this.setState(
             {
@@ -368,12 +338,10 @@ class CardGame extends Component {
         }, 2000);
       }
     }
+    
     if (player2AttackingCard && pickWinner) {
-      if (attackedCardIndex === "12") {
-        this.setState({
-          message: "Player 1 lost",
-        });
-      } else if (player2AttackingCard > player1AttackedCard) {
+      
+      if (player2AttackingCard > player1AttackedCard) {
         newPlayer2Hand[attackingCardIndex].isFlipped = false;
         newPlayer1Hand[attackedCardIndex].hidden = true;
         setTimeout(() => {
@@ -404,8 +372,8 @@ class CardGame extends Component {
           );
         }, 2000);
       } else {
-        newPlayer1Hand[attackedCardIndex].isFlipped = false;
-        newPlayer2Hand[attackingCardIndex].isFlipped = false;
+        newPlayer1Hand[attackedCardIndex].hidden = true;
+        newPlayer2Hand[attackingCardIndex].hidden = true;
         setTimeout(() => {
           this.setState(
             {
@@ -421,6 +389,35 @@ class CardGame extends Component {
       }
     }
   };
+
+  winningCondition = () => {
+    console.log("we hit")
+    /* 
+    Things we need to know  
+      1. Index of commander
+      2. Check if commander is hidden
+      3. Check the hand
+      4. Losing Hand 
+      Check the index of the last hand and see which is hidden
+    */
+    let { player1hand, player2hand } = this.state;
+    let commander1Index = player1hand.length - 1;
+    let commander2Index = player2hand.length - 1;
+    let isCommanderOneHidden = player1hand[commander1Index].hidden;
+    let isCommanderTwoHidden = player2hand[commander2Index].hidden;
+    console.log("command hidden", isCommanderOneHidden)
+    if (isCommanderOneHidden) {
+      window.alert("Player 2 Won!")
+      setTimeout(() => {
+        this.props.history.push('/')
+      }, 3000);
+    } else if (isCommanderTwoHidden) {
+      window.alert("Player 1 Won!")
+      setTimeout(() => {
+        this.props.history.push('/')
+      }, 3000);
+    }
+  }
 
   endTurn = () => {
     const { turnEnd, playerturn } = this.state;
