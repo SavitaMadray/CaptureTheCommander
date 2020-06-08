@@ -33,7 +33,7 @@ function Card(props) {
         onClick={(e) => {
           if (!card.hidden) {
             // clicked(e);
-            gameMoves(e);
+            // gameMoves(e);
           }
         }}
         className={"card" + " " + hiddenCard}
