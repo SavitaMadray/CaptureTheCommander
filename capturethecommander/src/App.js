@@ -2,10 +2,10 @@ import React from "react";
 import "./App.css";
 import Home from "./Component/Home";
 import Nav from "./Component/nav";
-import AuthContainer from "./Containers/AuthContainer";
+
 import Users from "./Component/Users";
 import CardGame from "./Component/cardgame.jsx";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, withRouter } from "react-router-dom";
 import Axios from "axios";
 
 class App extends React.Component {
@@ -28,13 +28,14 @@ class App extends React.Component {
         user: null,
         isUserLoggedIn: false,
       });
+      this.props.history.push("/");
     } catch (err) {
       console.log("err", err);
     }
   };
 
-  renderAuthContainer = () => {
-    return <AuthContainer setUser={this.setUser} />;
+  renderHome = () => {
+    return <Home setUser={this.setUser} />;
   };
   render() {
     return (
@@ -45,15 +46,13 @@ class App extends React.Component {
         />
 
         <Switch>
-          <Route exact path="/login" render={this.renderAuthContainer} />
-          <Route exact path="/signup" render={this.renderAuthContainer} />
           <Route exact path="/users" component={Users} />
-          <Route exact path="/" component={Home} />
           <Route path="/cardgame" component={CardGame} />
+          <Route path="/" render={this.renderHome} />
         </Switch>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

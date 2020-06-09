@@ -17,19 +17,28 @@ const Nav = ({ logOutUser, isUserLoggedIn }) => {
   return (
     <div className="Nav">
       <section className="navSection">
-        <img
+        {/* <img
           className="navImg"
-          src="https://cdn.pixabay.com/photo/2016/03/31/20/12/a-1295593_1280.png"
+          src="https://cdn.pixabay.com/photo/2014/03/25/16/35/ninja-star-297476_1280.png"
           alt="broken pic"
-        />
-        <Link to="/Login">LogIn</Link> <Link to="/SignUp">SignUp</Link>{" "}
+        /> */}
+        <button className="navButton">
+          <Link to="/login" className="navLink">
+            LogIn
+          </Link>
+        </button>{" "}
+        <button className="navButton">
+          <Link to="/signup" className="navLink">
+            SignUp
+          </Link>
+        </button>
       </section>
 
-      <img
+      {/* <img
         className="navImg"
-        src="https://cdn.pixabay.com/photo/2016/03/31/20/12/a-1295593_1280.png"
+        src="https://cdn.pixabay.com/photo/2014/03/25/16/35/ninja-star-297476_1280.png"
         alt="broken pic"
-      />
+      /> */}
     </div>
   );
 };
