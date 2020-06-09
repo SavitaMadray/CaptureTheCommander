@@ -20,7 +20,7 @@ function Home({ setUser }) {
         {/* <Route exact path="/" render={renderAuthContainer} /> */}
       </Switch>
       <Link to="/cardgame">
-        <button>Start Game</button>
+        <button className="startButton">Start Game</button>
       </Link>
     </div>
   );

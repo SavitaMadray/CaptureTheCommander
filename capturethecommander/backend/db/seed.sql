@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS userlist;
-CREATE DATABASE userlist;
+DROP DATABASE IF EXISTS capturecommander_db;
+CREATE DATABASE capturecommander_db;
 
-\c userlist;
+\c capturecommander_db;
 
 CREATE TABLE users
 (
@@ -13,7 +13,7 @@ CREATE TABLE users
 CREATE TABLE matches
 (
     id SERIAL PRIMARY KEY,
-    player1 VARCHAR NOT NULL UNIQUE,
-    player2 VARCHAR NOT NULL UNIQUE,
-    whoWon VARCHAR NOT NULL UNIQUE,
-)
+    player1 VARCHAR NOT NULL,
+    player2 VARCHAR NOT NULL,
+    whoWon VARCHAR NOT NULL
+);
