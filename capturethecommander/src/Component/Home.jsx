@@ -15,10 +15,7 @@ function Home({ setUser }) {
         “War”, and “Solitaire.” Players use a combination of strategy and luck
         to capture their opponent’s “Commander”.
       </p>
-      <Switch>
-        <Route path="/" render={renderAuthContainer} />
-        {/* <Route exact path="/" render={renderAuthContainer} /> */}
-      </Switch>
+
       <Link to="/cardgame">
         <button className="startButton">Start Game</button>
       </Link>
