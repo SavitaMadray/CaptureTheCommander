@@ -27,20 +27,19 @@ class CardGame extends Component {
       turnWinner: "",
       turn1: false,
       turn2: false,
+      player1Name: "",
+      player2Name: ""
     };
   }
 
   componentDidMount() {
     this.handleStart();
-    axios
-      .post("/matches/all", {
-        player1: "Player 1",
-        player2: "Player 2",
-        whoWon: "Player 1",
-      })
-      .then((res) => {
-        console.log(res);
-      });
+    this.setState({
+      player1Name: this.props.p1,
+      player2Name: this.props.p2
+    })
+    // let{player2Name,player1Name} = this.state
+    // console.log(player2Name,player1Name);
   }
 
   // componentDidUpdate(){
@@ -194,26 +193,6 @@ class CardGame extends Component {
     });
   };
 
-  chooseAttacker = (e) => {
-    //What is it that I want to do?
-    /*
-      1. Check to see who's turn it is.
-      2. Then use the same value to check which hand i'm choosing from.
-      3. Asign card based on player hand and turn.
-    */
-
-    const { playerturn } = this.state;
-    //  if (playerturn === "Player1") {
-    //    if (e.target.dataset.hand === "player1") {
-    //      this.setState({
-    //        player1AttackingCard: parseInt(e.target.dataset.numval),
-    //        message: "Please choose an opponents card to attack",
-    //        attackingCardIndex: e.target.id,
-    //        turn1: true,
-    //        turn2: false,
-    //      });
-    //    }
-  };
 
   chooseOpponent2 = (e) => {
     //Last digit of player. Either 1 or 2
@@ -393,28 +372,39 @@ class CardGame extends Component {
       4. Losing Hand 
       Check the index of the last hand and see which is hidden
     */
-    let { player1hand, player2hand } = this.state;
+    let { player1hand, player2hand, player1Name, player2Name } = this.state;
     let commander1Index = player1hand.length - 1;
     let commander2Index = player2hand.length - 1;
     let isCommanderOneHidden = player1hand[commander1Index].hidden;
     let isCommanderTwoHidden = player2hand[commander2Index].hidden;
     console.log("command hidden", isCommanderOneHidden);
+    const winningPlayer = isCommanderOneHidden ? player2Name : player1Name;
+    console.log(winningPlayer);
 
-    const winningPlayer = isCommanderOneHidden ? "Player 1" : "Player 2";
-    axios
-      .post("matches/all", {
-        player1: "Player 1",
-        player2: "Player 2",
-        whoWon: winningPlayer,
-      })
-      .then((res) => {
-        console.log(res);
-      });
-    window.alert(`${winningPlayer} won!!`);
-    setTimeout(() => {
-      window.location.href = "/";
-    }, 3000);
+    if (isCommanderOneHidden || isCommanderTwoHidden) {
+
+      axios
+        .post("matches/all", {
+          player1: player1Name,
+          player2: player2Name,
+          whoWon: winningPlayer,
+        })
+        .then((res) => {
+          console.log(res);
+        });
+
+      window.alert(`${winningPlayer} won!!`);
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 1500);
+
+    }
   };
+
+
+
+
+
 
   endTurn = () => {
     const { turnEnd, playerturn } = this.state;
@@ -455,6 +445,8 @@ class CardGame extends Component {
       cardDeck,
       player2hand,
       message,
+      player1Name,
+      player2Name
     } = this.state;
 
     if (gameStart) {
@@ -462,6 +454,8 @@ class CardGame extends Component {
         <GameBoard
           player1hand={player1hand}
           // flipCard={this.flipCard}
+          name1 = {player1Name}
+          name2 = {player2Name}
           cardDeck={cardDeck}
           player2hand={player2hand}
           message={message}
