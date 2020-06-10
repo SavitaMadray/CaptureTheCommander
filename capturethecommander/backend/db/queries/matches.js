@@ -7,7 +7,7 @@ const getAllMatches = async () => {
 
 const addNewMatch = async (matches) => {
   const addMatchQuery = `INSERT INTO matches(player1, player2, whoWon)
-                      VALUES($/player1/, $/player2/, $/whowon/)
+                      VALUES($/player1/, $/player2/, $/whoWon/)
                       RETURNING *`;
 
   const newMatch = await db.any(addMatchQuery, matches);

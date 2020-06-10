@@ -28,6 +28,7 @@ router.post("/all", async (req, res, next) => {
       whoWon: req.body.whoWon,
     };
     let newmatch = await matchQueries.addNewMatch(matchInfo);
+    console.log(newmatch);
     res.json({
       payload: newmatch,
       msg: "success adding a match",
