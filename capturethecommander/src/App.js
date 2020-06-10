@@ -48,7 +48,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/users" component={Users} />
           <Route path="/cardgame" component={CardGame} />
-          <Route path="/" render={this.renderHome} />
+          <Route path="/" component={Home} />
         </Switch>
       </div>
     );
