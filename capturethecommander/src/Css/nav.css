@@ -1,7 +1,5 @@
 .Nav {
   display: flex;
-  padding: 15px;
-  background-color: rgba(61, 63, 65, 0.324);
   justify-content: space-between;
   font-family: "Fontdiner Swanky", cursive;
 }
@@ -19,5 +17,17 @@
   color: black;
   font-size: 1.3em;
   text-decoration: none;
-  padding: 15px;
+}
+
+/* .navButton {
+  font-family: "Fontdiner Swanky", cursive;
+  border-radius: 15px;
+  margin-left: 5px;
+  font-size: 1.02em;
+  background-color: rgba(1, 77, 77, 0.393);
+} */
+
+.navLink {
+  text-decoration: none;
+  color: white;
 }

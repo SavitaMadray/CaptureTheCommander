@@ -65,10 +65,9 @@ class AuthContainer extends Component {
 
   render() {
     return (
-      <div>
-        <h2>AuthContainer</h2>
+      <div className="AuthContainer">
         <Switch>
-          <Route exact path="/login" render={this.renderLoginForm} />
+          <Route exact path="/(login|)" render={this.renderLoginForm} />
           <Route exact path="/signup" render={this.renderSignUpForm} />
         </Switch>
       </div>
