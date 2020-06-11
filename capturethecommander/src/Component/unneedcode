@@ -1,6 +1,0 @@
-<Switch>
-        <Route path="/" render={renderAuthContainer} />
-        {/* <Route exact path="/" render={renderAuthContainer} /> */}
-      </Switch>
-    used on Home.jsx
-

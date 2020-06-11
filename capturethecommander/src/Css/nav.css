@@ -1,7 +1,9 @@
 .Nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Fontdiner Swanky", cursive;
+  background-color: black;
+  padding-top: 10px;
 }
 
 .navImg {
@@ -29,7 +31,7 @@ a {
   background-color: rgba(1, 77, 77, 0.393);
 } */
 
-.navLink {
+.link {
   text-decoration: none;
   color: white;
 }
