@@ -3,7 +3,7 @@ import "../Css/gameboard.css";
 import Card from "./card";
 
 export default function GameBoard(props) {
-  const { player1hand, flipCard, player2hand, message, gameMoves } = props;
+  const { player1hand, flipCard, player2hand, message, gameMoves,name1, name2 } = props;
 
   let firstRowP1 = player1hand.slice(0, 4); //0,1,2,3
   let secondRowP1 = player1hand.slice(4, 7);
@@ -17,7 +17,7 @@ export default function GameBoard(props) {
   let secondRowP2 = player2hand.slice(10, 12);
   let firstRowP2 = [player2hand[player2hand.length - 1]];
   const p1 = "player1";
-  const p2 = "player2"
+  const p2 = "player2";
 
   return (
     <div className="board">
@@ -27,7 +27,7 @@ export default function GameBoard(props) {
        {/* beginning of section */}
         <section className="hand1">
           <section className="row1">
-            <p className="player">Player 1</p>
+            <p className="player">{name1}</p>
             {firstRowP1.map((card, i) => {
               return (
                 <Card
@@ -131,7 +131,7 @@ export default function GameBoard(props) {
         {/*end of section  */}
         <section className="hand2">
           <section className="row1">
-            <p className="player">Player 2</p>
+            <p className="player">{name2}</p>
             {firstRowP2.map((card, i) => {
               return (
                 <Card

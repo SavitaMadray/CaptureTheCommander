@@ -9,11 +9,13 @@
 }
 
 .navSection {
-  display: flex;
-  justify-content: flex-end;
+  width: 100%;
+  text-align: left;
+  /* display: flex; */
+  /* justify-content: flex-start; */
 }
 
-.link {
+a {
   color: black;
   font-size: 1.3em;
   text-decoration: none;
