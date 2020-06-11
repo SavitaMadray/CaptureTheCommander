@@ -26,23 +26,28 @@ function Home({ setUser, name1, name2, getUser, handleChange }) {
           to capture their opponent’s “Commander”.
         </p>
         <form onSubmit = {handleSubmit}>
+          <label htmlFor= "player1">Player 1</label>
           <input
+            id = "player1"
             name="player1"
             type="text"
             value = {name1}
             placeholder="player 1 enter name"
             onChange = {handleChange}
             required
-          />
+          /><br/>
 
+
+          <label htmlFor = "player2">Player 2</label>
           <input
+            id = "player2"
             name="player2"
             type="text"
             value = {name2}
             placeholder="player 2 enter name"
             onChange = {handleChange}
             required
-          />
+          /><br/>
 
           <input type="submit" value="Start Game" />
         </form>

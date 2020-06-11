@@ -5,19 +5,18 @@ class matches extends Component {
     constructor() {
         super()
         this.state = {
-            history:[]
+            history: []
         }
     }
 
     componentDidMount() {
-        let {history} = this.state
+        let { history } = this.state
         axios.get("/matches").then((res) => {
             console.log(res)
             let matches = res.data.payload
             console.log(matches)
-            matches.map((el) =>{
-                history.push(el)
-
+            this.setState({
+                history: res.data.payload
             })
         })
 
@@ -35,9 +34,16 @@ class matches extends Component {
             <div>
                 <p>function</p>
                 <ul>
-                {history.map(el =>{
-                    return <p>{el.id}</p>
-                })}
+                    {
+                        history.map((el, index) =>{
+                            return(
+                                <li key = {index}>
+                                   Match:{el.id} Player 1: {el.player1} Player2: {el.player2} Winner: {el.whowon}
+
+                                </li>
+                            )
+                        })
+                    }
 
                 </ul>
 
