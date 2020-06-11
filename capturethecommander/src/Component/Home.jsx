@@ -26,25 +26,26 @@ function Home({ setUser, name1, name2, getUser, handleChange }) {
           </p>
 
           <form onSubmit={handleSubmit}>
+            <label htmlFor="player1">Player 1</label>
             <input
               name="player1"
               type="text"
               value={name1}
-              placeholder="player 1 enter name"
+              placeholder="enter name"
               onChange={handleChange}
               required
             />
-
+            <label htmlFor="player2">Player 2</label>
             <input
               name="player2"
               type="text"
               value={name2}
-              placeholder="player 2 enter name"
+              placeholder=" enter name"
               onChange={handleChange}
               required
             />
 
-            <input type="submit" value="Start Game" />
+            <input className="button" type="submit" value="Start Game" />
           </form>
 
           {/* <Link to="/cardgame">

@@ -1,11 +1,12 @@
 .main {
   height: 100vh;
   background-image: url("https://cdn.pixabay.com/photo/2016/04/21/16/38/stormtrooper-1343877_1280.jpg");
-  color: red;
+  color: black;
   font-family: "Fontdiner Swanky", cursive;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 1.3em;
 }
 
 .sectionHome {
@@ -15,7 +16,7 @@
 }
 .title {
   width: 50%;
-  background-color: rgba(255, 255, 255, 0.303);
+  background-color: rgba(255, 255, 255, 0.372);
 }
 
 .formHome {
@@ -28,4 +29,8 @@
   width: 70%;
   padding-top: 300px;
   background-color: rgba(255, 255, 255, 0.303);
+}
+
+.button {
+  font-family: "Fontdiner Swanky", cursive;
 }
