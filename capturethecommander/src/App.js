@@ -5,6 +5,7 @@ import Nav from "./Component/nav";
 
 import Users from "./Component/Users";
 import CardGame from "./Component/cardgame.jsx";
+import matches from "./Component/Matches"
 import { Switch, Route, withRouter } from "react-router-dom";
 import Axios from "axios";
 
@@ -37,7 +38,7 @@ class App extends React.Component {
   };
 
   getUser = (name1, name2) => {
-    console.log(name1,name2)
+    console.log(name1, name2)
     this.setState({
       player1: name1,
       player2: name2
@@ -52,24 +53,24 @@ class App extends React.Component {
     this.setState({
       [name]: value
     })
-    
+
   }
 
   renderHome = () => {
-    let {player1,player2} = this.state
+    let { player1, player2 } = this.state
     return <Home setUser={this.setUser}
-    handleChange = {this.handleChange}
-    name1 = {player1}
-    name2 = {player2}  
-    getUser = {this.getUser} />;
+      handleChange={this.handleChange}
+      name1={player1}
+      name2={player2}
+      getUser={this.getUser} />;
   };
 
-  renderCardGame = () =>{
-    let {player1,player2} = this.state
-    return<CardGame p1 = {player1} p2 = {player2}/>
+  renderCardGame = () => {
+    let { player1, player2 } = this.state
+    return <CardGame p1={player1} p2={player2} />
   }
 
-  
+
 
 
   render() {
@@ -81,8 +82,9 @@ class App extends React.Component {
         />
 
         <Switch>
+          <Route path="/cardgame" render={this.renderCardGame} />
           <Route exact path="/users" component={Users} />
-          <Route path="/cardgame" render ={this.renderCardGame} />
+          <Route exact path="/Matches" component={matches} />
           <Route path="/" render={this.renderHome} />
         </Switch>
       </div>
