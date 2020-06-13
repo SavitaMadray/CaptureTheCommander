@@ -26,7 +26,7 @@ function Home({ setUser, name1, name2, getUser, handleChange }) {
           </p>
 
           <form onSubmit={handleSubmit}>
-            <label htmlFor="player1">Player 1</label>
+            <label htmlFor="player1">Player 1</label>{" "}
             <input
               name="player1"
               type="text"
@@ -34,8 +34,8 @@ function Home({ setUser, name1, name2, getUser, handleChange }) {
               placeholder="enter name"
               onChange={handleChange}
               required
-            />
-            <label htmlFor="player2">Player 2</label>
+            />{" "}
+            <label htmlFor="player2">Player 2</label>{" "}
             <input
               name="player2"
               type="text"
@@ -43,8 +43,7 @@ function Home({ setUser, name1, name2, getUser, handleChange }) {
               placeholder=" enter name"
               onChange={handleChange}
               required
-            />
-
+            />{" "}
             <input className="button" type="submit" value="Start Game" />
           </form>
 
