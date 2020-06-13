@@ -3,11 +3,7 @@
   justify-content: space-around;
   font-family: "Fontdiner Swanky", cursive;
   background-color: black;
-  padding-top: 10px;
-}
-
-.navImg {
-  height: 40px;
+  padding-top: 25px;
 }
 
 .navSection {
@@ -34,4 +30,10 @@ a {
 .link {
   text-decoration: none;
   color: white;
+}
+
+.link:hover {
+  text-shadow: 0px 0px 50px rgb(171, 245, 245);
+  color: aqua;
+  transition: all 0.2s ease-in;
 }

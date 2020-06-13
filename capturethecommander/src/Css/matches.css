@@ -1,0 +1,27 @@
+.mainMatch {
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2016/04/21/16/38/stormtrooper-1343877_1280.jpg");
+  color: black;
+  font-family: "Fontdiner Swanky", cursive;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.6em;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  color: black;
+}
+
+.matchesBox {
+  display: grid;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.372);
+  padding-left: 5px;
+  padding-right: 95px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}

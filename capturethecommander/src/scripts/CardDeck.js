@@ -4,10 +4,8 @@ let deck = [
     suit: "♠︎",
     num: "2",
     numVal: 2,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884151_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/2_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -16,10 +14,8 @@ let deck = [
     suit: "♠︎",
     num: "3",
     numVal: 3,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884155_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/3_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -28,10 +24,8 @@ let deck = [
     suit: "♠︎",
     num: "4",
     numVal: 4,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884160_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/4_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -40,10 +34,8 @@ let deck = [
     suit: "♠︎",
     num: "5",
     numVal: 5,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884165_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/5_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -52,10 +44,8 @@ let deck = [
     suit: "♠︎",
     num: "6",
     numVal: 6,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884170_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/6_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -64,10 +54,8 @@ let deck = [
     suit: "♠︎",
     num: "7",
     numVal: 7,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884174_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/7_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -76,10 +64,8 @@ let deck = [
     suit: "♠︎",
     num: "8",
     numVal: 8,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884178_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/8_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -88,10 +74,8 @@ let deck = [
     suit: "♠︎",
     num: "9",
     numVal: 9,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/spades-884183_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/9_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -100,10 +84,8 @@ let deck = [
     suit: "♠︎",
     num: "10",
     numVal: 10,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/55/spades-884147_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/10_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -112,10 +94,8 @@ let deck = [
     suit: "♠︎",
     num: "J",
     numVal: 11,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884192_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/jack_of_spades2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -124,10 +104,8 @@ let deck = [
     suit: "♠︎",
     num: "Q",
     numVal: 12,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884203_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/queen_of_spades2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -136,10 +114,8 @@ let deck = [
     suit: "♠︎",
     num: "K",
     numVal: 13,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884197_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/king_of_spades2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -148,10 +124,8 @@ let deck = [
     suit: "♠︎",
     num: "A",
     numVal: 14,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/spades-884187_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/ace_of_spades.png",
     isFlipped: false,
     hidden: false,
   },
@@ -160,10 +134,8 @@ let deck = [
     suit: "♢",
     num: "2",
     numVal: 2,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/55/diamonds-884149_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/2_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -172,10 +144,8 @@ let deck = [
     suit: "♢",
     num: "3",
     numVal: 3,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884153_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/3_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -184,10 +154,8 @@ let deck = [
     suit: "♢",
     num: "4",
     numVal: 4,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884157_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/4_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -196,10 +164,8 @@ let deck = [
     suit: "♢",
     num: "5",
     numVal: 5,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884162_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/5_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -208,10 +174,8 @@ let deck = [
     suit: "♢",
     num: "6",
     numVal: 6,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884168_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/6_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -220,10 +184,8 @@ let deck = [
     suit: "♢",
     num: "7",
     numVal: 7,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884172_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/7_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -232,10 +194,8 @@ let deck = [
     suit: "♢",
     num: "8",
     numVal: 8,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884176_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/8_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -244,10 +204,8 @@ let deck = [
     suit: "♢",
     num: "9",
     numVal: 9,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884180_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/9_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -256,10 +214,8 @@ let deck = [
     suit: "♢",
     num: "10",
     numVal: 10,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/55/diamonds-884145_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/10_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -268,10 +224,8 @@ let deck = [
     suit: "♢",
     num: "K",
     numVal: 13,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/diamonds-884195_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/king_of_diamonds2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -280,10 +234,8 @@ let deck = [
     suit: "♢",
     num: "Q",
     numVal: 12,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/diamonds-884199_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/queen_of_diamonds2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -292,10 +244,8 @@ let deck = [
     suit: "♢",
     num: "J",
     numVal: 11,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/diamonds-884189_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/jack_of_diamonds2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -304,10 +254,8 @@ let deck = [
     suit: "♢",
     num: "A",
     numVal: 14,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/diamonds-884185_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/ace_of_diamonds.png",
     isFlipped: false,
     hidden: false,
   },
@@ -316,10 +264,8 @@ let deck = [
     suit: "♡",
     num: "2",
     numVal: 2,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/55/hearts-884150_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/2_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -328,10 +274,8 @@ let deck = [
     suit: "♡",
     num: "3",
     numVal: 3,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884154_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/3_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -340,10 +284,8 @@ let deck = [
     suit: "♡",
     num: "4",
     numVal: 4,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884159_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/4_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -352,10 +294,8 @@ let deck = [
     suit: "♡",
     num: "5",
     numVal: 5,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884163_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/5_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -364,10 +304,8 @@ let deck = [
     suit: "♡",
     num: "6",
     numVal: 6,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884169_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/6_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -376,10 +314,8 @@ let deck = [
     suit: "♡",
     num: "7",
     numVal: 7,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884173_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/7_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -388,10 +324,8 @@ let deck = [
     suit: "♡",
     num: "8",
     numVal: 8,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884177_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/8_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -400,10 +334,8 @@ let deck = [
     suit: "♡",
     num: "9",
     numVal: 9,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/hearts-884181_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/9_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -412,10 +344,8 @@ let deck = [
     suit: "♡",
     num: "10",
     numVal: 10,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/55/hearts-884146_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/10_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -424,10 +354,8 @@ let deck = [
     suit: "♡",
     num: "K",
     numVal: 13,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884196_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/king_of_hearts2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -436,10 +364,8 @@ let deck = [
     suit: "♡",
     num: "Q",
     numVal: 12,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884201_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/queen_of_hearts2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -448,10 +374,8 @@ let deck = [
     suit: "♡",
     num: "J",
     numVal: 11,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884191_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/jack_of_hearts2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -460,10 +384,8 @@ let deck = [
     suit: "♡",
     num: "A",
     numVal: 14,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/hearts-884186_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/ace_of_hearts.png",
     isFlipped: false,
     hidden: false,
   },
@@ -472,10 +394,8 @@ let deck = [
     suit: "♣︎",
     num: "2",
     numVal: 2,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/55/clubs-884148_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/2_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
@@ -484,10 +404,8 @@ let deck = [
     suit: "♣︎",
     num: "3",
     numVal: 3,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884152_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/4_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
@@ -496,10 +414,8 @@ let deck = [
     suit: "♣︎",
     num: "4",
     numVal: 4,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884156_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/4_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
@@ -508,10 +424,8 @@ let deck = [
     suit: "♣︎",
     num: "5",
     numVal: 5,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884161_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/5_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
@@ -520,10 +434,8 @@ let deck = [
     suit: "♣︎",
     num: "6",
     numVal: 6,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884167_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/6_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
@@ -532,10 +444,8 @@ let deck = [
     suit: "♣︎",
     num: "7",
     numVal: 7,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884171_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/7_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
@@ -544,10 +454,8 @@ let deck = [
     suit: "♣︎",
     num: "8",
     numVal: 8,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884175_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/8_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
@@ -556,10 +464,8 @@ let deck = [
     suit: "♣︎",
     num: "9",
     numVal: 9,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884179_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/9_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
@@ -568,10 +474,8 @@ let deck = [
     suit: "♣︎",
     num: "10",
     numVal: 10,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/55/clubs-884144_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/10_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
@@ -580,10 +484,8 @@ let deck = [
     suit: "♣︎",
     num: "J",
     numVal: 11,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884188_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/jack_of_clubs2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -592,10 +494,8 @@ let deck = [
     suit: "♣︎",
     num: "Q",
     numVal: 12,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884198_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/queen_of_clubs2.png",
 
     isFlipped: false,
     hidden: false,
@@ -605,10 +505,8 @@ let deck = [
     suit: "♣︎",
     num: "K",
     numVal: 13,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/57/clubs-884194_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/king_of_clubs2.png",
     isFlipped: false,
     hidden: false,
   },
@@ -617,10 +515,8 @@ let deck = [
     suit: "♣︎",
     num: "A",
     numVal: 14,
-    backImg:
-      "https://cdn.pixabay.com/photo/2014/03/06/20/40/flora-281141_1280.png",
-    frontImg:
-      "https://cdn.pixabay.com/photo/2015/08/11/11/56/clubs-884184_1280.png",
+    backImg: "https://imgs.abduzeedo.com/files/paul0v2/bicycle-cards/bc-11.jpg",
+    frontImg: "/cards/ace_of_clubs.png",
     isFlipped: false,
     hidden: false,
   },
